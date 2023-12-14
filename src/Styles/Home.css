@@ -11,7 +11,7 @@
 
 .main-hero {
     height: 120vh;
-    background: url('./bg.svg');
+    background: url('./bg.png');
     background-size: cover;
     position: relative;
 }
