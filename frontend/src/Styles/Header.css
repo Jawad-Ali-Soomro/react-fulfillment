@@ -1,0 +1,131 @@
+.header {
+    width: 100%;
+    height: 10vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: white;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    align-items: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.301);
+    z-index: 10;
+}
+
+.logo a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    color: inherit;
+}
+
+.logo img {
+    width: 80px;
+}
+
+.logo a h2 {
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+
+.logo a h2 span {
+    font-weight: 300;
+}
+
+.navs {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.navs .not-active {
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+    color: black;
+    transition: .3s;
+    cursor: pointer;
+    font-family: Roboto, sans-serif;
+}
+
+.navs .not-active:hover {
+    color: blueviolet;
+}
+
+.active {
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+    position: relative;
+    color: black;
+    cursor: pointer;
+}
+
+.active::after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: black;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+}
+
+.links {
+    display: flex;
+    gap: 20px;
+}
+
+
+.links a i {
+    font-size: 2.2rem;
+    color: black;
+}
+
+.menu-btn{
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.mobile{
+    justify-content: space-around;
+}
+
+.mobile-menu{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .3);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.main-menu{
+    width: 80%;
+    height: 50vh;
+    padding: 20px;
+    margin-top: 10px;
+    background: linear-gradient(298.56deg,rgba(0,255,255,.98) -15.92%,rgba(49,115,204,.98) 27.89%,rgba(69,60,184,.98) 61.93%,rgba(70,15,121,.98) 109.25%);;
+    border-radius: 20px;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    transition: .3s;
+}
+
+.main-top i{
+    cursor: pointer;
+    font-size: 1.2rem;
+}

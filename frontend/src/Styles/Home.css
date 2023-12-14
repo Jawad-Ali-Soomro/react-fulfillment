@@ -1,0 +1,315 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.home-page {
+    width: 100%;
+    margin-top: 10vh;
+}
+
+.main-hero {
+    height: 130vh;
+    background: url('./bg.svg');
+    background-size: cover;
+    position: relative;
+}
+
+.top-content {
+    position: absolute;
+    top: 8vh;
+    left: 15vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.top-content h1 {
+    color: white;
+    font-size: 3rem;
+}
+
+.top-content h2 {
+    color: white;
+    font-size: 1.8rem;
+    font-weight: 300;
+    margin-top: 10px;
+}
+
+.top-content a {
+    font-size: 1.8rem;
+    color: rgb(213, 250, 5);
+    text-decoration: none;
+    padding-top: 20px;
+    font-weight: 600;
+}
+
+.bottom-content {
+    position: absolute;
+    bottom: 0;
+    right: 20px;
+}
+
+.bottom-content p{
+    font-size: 1.1rem;
+    font-weight: 300;
+    width: 340px;
+}
+
+.work-flow {
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.work-flow .content {
+    margin-left: 100px;
+    width: 600px;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.content p {
+    font-size: 1.1rem;
+}
+
+.content h4 {
+    line-height: 60px;
+    font-size: 1rem;
+    color: rgba(69, 69, 70, 0.534);
+    font-weight: 400;
+}
+
+.content p:last-child {
+    margin-top: 20px;
+}
+
+.content p:last-child span , .bottom-content p span {
+    background-image: linear-gradient(45deg, rgba(137, 43, 226, 1), rgba(255, 255, 255, 0.226));
+    color: transparent;
+    background-clip: text;
+}
+
+.main-carousel {
+    width: 300px;
+    height: 100px;
+    overflow-y: scroll;
+    padding-right: 20px;
+    flex-direction: column;
+}
+
+
+.main-carousel::-webkit-scrollbar{
+    background: blueviolet;
+    border-radius: 10px;
+    width: 10px;
+}
+
+.main-carousel::-webkit-scrollbar-thumb{
+    background: rgba(255, 255, 255, 0.2);
+    width: 5px;
+}
+
+.main-carousel h1{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.steps {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+
+.step {
+    width: 300px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    gap: 20px;
+    position: relative;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+.step:not(.not):after{
+    content: '';
+    width: 100px;
+    border: 2px dashed rgba(0, 0, 0, 0.2);
+    position: absolute;
+    left: 105%;
+}
+
+.step .top-sect{
+    width: 100%;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.top-sect img{
+    width: 80%;
+    height: 90%;
+}
+
+.main-step {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.main-step h1 {
+    width: 65px;
+    height: 65px;
+    background: blueviolet;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 2.5rem;
+}
+
+.main-step h2 {
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.842);
+}
+
+.benefits {
+    width: 100%;
+    height: 80vh;
+    /* background: #eeeeee34; */
+    margin-top: 20vh;
+    display: flex;
+}
+
+.benefits .left {
+    width: 22%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    flex-direction: column;
+    position: relative;
+}
+
+.benefits .right {
+    width: 75%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2%;
+}
+
+.left p {
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 60px;
+    position: absolute;
+    color: rgba(0, 0, 0, 0.5);
+    top: 50px;
+}
+
+.tab-inactive {
+    color: rgba(0, 0, 0, 0.2);
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: end;
+    gap: 20px;
+}
+
+.tab-active {
+    color: blueviolet;
+    font-size: 1.6rem;
+    font-weight: 900;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.right-main {
+    width: 100%;
+    height: 100%;
+    transition: .3s;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.right-main p {
+    width: 300px;
+    line-height: normal;
+    font-size: 1.05rem;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.right .content {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+.right-main .content h1 {
+    font-size: 3rem;
+    color: blueviolet;
+}
+
+.right section img {
+    width: 450px;
+    /* box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); */
+}
+
+.right-main .content p {
+    font-weight: 300;
+    width: 500px;
+    margin-top: 20px;
+}
+
+.right-main .content h3 {
+    font-weight: 400;
+    margin-top: 30px;
+    font-size: 1.1rem;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.right-main .feature-step {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.right-main .feature-step span {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: blueviolet;
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 50%;
+}
+
+.right-main .feature-step h5 {
+    font-size: 1rem;
+    font-weight: 300;
+}
