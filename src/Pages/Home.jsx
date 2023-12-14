@@ -339,14 +339,20 @@ const Home = () => {
         <section>
           <div className="main">
             <a href="">
-              <img src="./chat.png" alt="" />
+              <i class="uil uil-comments"></i>
               <h1>Live Chat</h1>
             </a>
           </div>
           <div className="main">
             <a href="">
-              <img src="./route.png" alt="" />
+              <i class="uil uil-map-pin-alt"></i>
               <h1>Get Started</h1>
+            </a>
+          </div>
+          <div className="main">
+            <a href="">
+              <i class="uil uil-phone"></i>
+              <h1>Make A Call</h1>
             </a>
           </div>
         </section>
@@ -354,5 +360,4 @@ const Home = () => {
     </div>
   );
 };
-
 export default Home;

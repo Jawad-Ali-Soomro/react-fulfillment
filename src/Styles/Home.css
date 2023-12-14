@@ -10,7 +10,7 @@
 }
 
 .main-hero {
-    height: 130vh;
+    height: 120vh;
     background: url('./bg.svg');
     background-size: cover;
     position: relative;
@@ -400,12 +400,12 @@ ul {
 
 .inquiry section{
     display: flex;
+    gap: 100px;
 }
 
 .inquiry p{
     font-weight: 300;
     font-size: 1.2rem;
-    color: orange;
 }
 
 .inquiry .main{
@@ -422,7 +422,22 @@ ul {
     margin-bottom: 20px;
 }
 
+.inquiry .main i{
+    font-size: 150px;
+}
+
 .inquiry .main a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     text-decoration: none;
-    color: rgba(255, 166, 0, 0.863);
+    color: black;
+}
+
+.inquiry .main:nth-child(1) a i{
+    color: orange;
+}
+.inquiry .main:nth-child(2) a i{
+    color: blueviolet;
 }
