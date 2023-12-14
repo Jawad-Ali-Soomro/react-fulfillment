@@ -23,7 +23,7 @@
 }
 
 .logo img {
-    width: 80px;
+    width: 60px;
 }
 
 .logo a h2 {
@@ -45,7 +45,7 @@
 .navs .not-active {
     text-decoration: none;
     font-size: 1rem;
-    font-weight: 600;
+    font-weight: 300;
     color: black;
     transition: .3s;
     cursor: pointer;
@@ -53,7 +53,7 @@
 }
 
 .navs .not-active:hover {
-    color: blueviolet;
+    color: orange;
 }
 
 .active {

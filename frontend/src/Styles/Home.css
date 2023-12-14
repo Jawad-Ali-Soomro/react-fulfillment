@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Roboto';
 }
 
 .home-page {
@@ -49,7 +50,7 @@
     right: 20px;
 }
 
-.bottom-content p{
+.bottom-content p {
     font-size: 1.1rem;
     font-weight: 300;
     width: 340px;
@@ -84,8 +85,9 @@
     margin-top: 20px;
 }
 
-.content p:last-child span , .bottom-content p span {
-    background-image: linear-gradient(45deg, rgba(137, 43, 226, 1), rgba(255, 255, 255, 0.226));
+.content p:last-child span,
+.bottom-content p span {
+    background-image: linear-gradient(45deg, orange, rgba(255, 255, 255, 0.226));
     color: transparent;
     background-clip: text;
 }
@@ -99,18 +101,18 @@
 }
 
 
-.main-carousel::-webkit-scrollbar{
-    background: blueviolet;
+.main-carousel::-webkit-scrollbar {
+    background: orange;
     border-radius: 10px;
     width: 10px;
 }
 
-.main-carousel::-webkit-scrollbar-thumb{
+.main-carousel::-webkit-scrollbar-thumb {
     background: rgba(255, 255, 255, 0.2);
     width: 5px;
 }
 
-.main-carousel h1{
+.main-carousel h1 {
     height: 100px;
     display: flex;
     justify-content: center;
@@ -126,26 +128,27 @@
 
 .step {
     width: 300px;
-    height: 400px;
+    height: 350px;
     display: flex;
     flex-direction: column;
     position: relative;
     justify-content: center;
     gap: 20px;
     position: relative;
-    border: 1px solid rgba(0, 0, 0, 0.2);
+    /* border: 1px solid rgba(0, 0, 0, 0.2); */
     border-radius: 10px;
 }
 
-.step:not(.not):after{
+.step:not(.not):after {
     content: '';
     width: 100px;
     border: 2px dashed rgba(0, 0, 0, 0.2);
+
     position: absolute;
     left: 105%;
 }
 
-.step .top-sect{
+.step .top-sect {
     width: 100%;
     height: 60%;
     display: flex;
@@ -153,7 +156,7 @@
     align-items: center;
 }
 
-.top-sect img{
+.top-sect img {
     width: 80%;
     height: 90%;
 }
@@ -169,7 +172,7 @@
 .main-step h1 {
     width: 65px;
     height: 65px;
-    background: blueviolet;
+    background: orange;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -186,7 +189,6 @@
 .benefits {
     width: 100%;
     height: 80vh;
-    /* background: #eeeeee34; */
     margin-top: 20vh;
     display: flex;
 }
@@ -235,7 +237,7 @@ ul {
 }
 
 .tab-active {
-    color: blueviolet;
+    color: orange;
     font-size: 1.6rem;
     font-weight: 900;
     cursor: pointer;
@@ -268,7 +270,7 @@ ul {
 
 .right-main .content h1 {
     font-size: 3rem;
-    color: blueviolet;
+    color: orange;
 }
 
 .right section img {
@@ -303,7 +305,7 @@ ul {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: blueviolet;
+    background: orange;
     color: white;
     font-size: 1.2rem;
     border-radius: 50%;
@@ -312,4 +314,115 @@ ul {
 .right-main .feature-step h5 {
     font-size: 1rem;
     font-weight: 300;
+}
+
+.integrations {
+    height: 70vh;
+    background: #eeeeee48;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main-integrarions {
+    width: 80%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.integrations p {
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: rgba(137, 43, 226, 0.541);
+}
+
+.main-integrarions .main {
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main-integrarions .main img {
+    width: 80px;
+    height: 60px;
+}
+
+.main-integrarions .main p {
+    margin-top: 20px;
+    font-weight: 300;
+    color: black;
+    font-size: 1rem;
+}
+
+@media (max-width: 600px) {
+    .work-flow .content {
+        margin-left: 10px;
+    }
+
+    .main-integrarions {
+        width: 100%;
+        gap: 30px;
+        height: 80%;
+    }
+
+    .steps {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .integrations .main {
+        width: 120px;
+    }
+
+    .step:not(.not):after {
+        max-width: 0;
+        overflow: hidden;
+    }
+}
+
+.inquiry {
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.inquiry section{
+    display: flex;
+}
+
+.inquiry p{
+    font-weight: 300;
+    font-size: 1.2rem;
+    color: orange;
+}
+
+.inquiry .main{
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.inquiry .main img{
+    width: 100px;
+    color: orange;
+    margin-bottom: 20px;
+}
+
+.inquiry .main a{
+    text-decoration: none;
+    color: rgba(255, 166, 0, 0.863);
 }
