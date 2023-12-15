@@ -407,6 +407,7 @@ ul {
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .inquiry p {
@@ -508,7 +509,7 @@ ul {
         justify-content: center;
     }
     .inquiry{
-        height: 90vh;
+        height: 100vh;
         gap: 10px;
         display: flex;
         justify-content: center;
