@@ -337,19 +337,19 @@ const Home = () => {
         <section>
           <div className="main">
             <a href="">
-              <i class="uil uil-comments"></i>
+              <img src="./chat.png" alt="" />
               <h1>Live Chat</h1>
             </a>
           </div>
           <div className="main">
             <a href="">
-              <i class="uil uil-map-pin-alt"></i>
+              <img src="./start.png" alt="" />
               <h1>Get Started</h1>
             </a>
           </div>
           <div className="main">
             <a href="">
-              <i class="uil uil-phone"></i>
+              <img src="./phone.png" alt="" />
               <h1>Make A Call</h1>
             </a>
           </div>

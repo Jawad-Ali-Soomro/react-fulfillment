@@ -33,7 +33,6 @@
 }
 
 .top-content h1:hover{
-    letter-spacing: 10px;
     cursor:default;
 }
 
@@ -164,7 +163,6 @@
     justify-content: center;
     gap: 20px;
     position: relative;
-    /* border: 1px solid rgba(0, 0, 0, 0.2); */
     border-radius: 10px;
 }
 
@@ -172,7 +170,6 @@
     content: '';
     width: 100px;
     border: 2px dashed rgba(0, 0, 0, 0.2);
-
     position: absolute;
     left: 105%;
 }
@@ -187,7 +184,11 @@
 
 .top-sect img {
     width: 80%;
-    height: 90%;
+    height: 80%;
+}
+
+.top-content img .not{
+    transform: rotate(90deg);
 }
 
 .main-step {
@@ -446,7 +447,8 @@ ul {
 }
 
 .inquiry .main img {
-    width: 100px;
+    width: 250px;
+    height: 150px;
     color: maroon;
     margin-bottom: 20px;
 }
