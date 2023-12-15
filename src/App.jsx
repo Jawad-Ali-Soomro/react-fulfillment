@@ -9,24 +9,12 @@ import FbaPrep from './Pages/FbaPrep';
 import Software from './Pages/Software';
 import About from './Pages/About';
 import Started from './Pages/Started';
+import Header from './Components/Desktop';
 
 const App = () => {
-  const [isMobile, setIsMobile] = useState(false);
-
-  useEffect(() => {
-    const handleResize = () => {
-      setIsMobile(window.innerWidth <= 1200);
-    };
-    handleResize();
-    window.addEventListener('resize', handleResize);
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    };
-  }, []);
 
   return (
     <div>
-      {isMobile ? <MobileMenu /> : <Desktop />}
       <BrowserRouter>
         <Routes>
           <Route path='/' element={<Home />}></Route>

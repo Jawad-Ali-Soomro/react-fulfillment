@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "../Styles/Home.css";
+import Header from "../Components/Desktop";
 const Home = () => {
   const [isMobile, setIsMobile] = useState(false);
   useEffect(() => {
@@ -15,14 +16,11 @@ const Home = () => {
   const [tab, setTab] = useState("Dashboard");
   return (
     <div className="home-page">
+      <Header />
       <div className="main-hero">
         <div className="top-content">
-          <h1>
-            Store <i className="uil-arrow-right"></i> Prep{" "}
-            <i className="uil-arrow-right"></i> Pack{" "}
-            <i className="uil-arrow-right"></i> Ship
-          </h1>
-          <h2>Trustde By Online Sellers Worldwide</h2>
+          <h1><span>STORE </span><span>PREP</span><span>PACK</span><span>SHIP</span></h1>
+          <h2>Trusted By Online Sellers Worldwide</h2>
           <a href="/get-started">
             GO FOR IT <i className="uil uil-angle-right"></i>
           </a>

@@ -50,6 +50,7 @@
     transition: .3s;
     cursor: pointer;
     font-family: Roboto, sans-serif;
+    text-transform: uppercase;
 }
 
 .navs .not-active:hover {
@@ -61,8 +62,9 @@
     font-size: 1rem;
     font-weight: 600;
     position: relative;
-    color: black;
+    color: maroon;
     cursor: pointer;
+    text-transform: uppercase;
 }
 
 .active::after {

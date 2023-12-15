@@ -1,85 +1,79 @@
-import React, { useState } from "react";
+import React, { useState , useEffect} from "react";
 import "../Styles/Header.css";
 import "../App.css";
 import Logo from "./Logo";
+import MobileMenu from "./MobileMenu";
+import { useNavigate } from "react-router-dom";
 
-const Desktop = () => {
+const Header = () => {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 1200);
+    };
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+  const navigate = useNavigate()
   const [path, setPath] = useState(window.location.pathname);
-  console.log(path);
   return (
-    <div className="header">
-      <Logo />
-      <div className="navs">
-        {path == "/" ? (
-          <a className="active">
-            Home
-          </a>
-        ) : (
-          <a href="/" className="not-active">
-            Home
-          </a>
-        )}
-        {path == "/fulfillment" ? (
-          <a className="active">
-            Fulfillment
-          </a>
-        ) : (
-          <a href="/fulfillment" className="not-active">
-            Fulfillment
-          </a>
-        )}
-        {path == "/fba-prep" ? (
-          <a className="active">
-            FBA Prep
-          </a>
-        ) : (
-          <a href="/fba-prep" className="not-active">
-            FBA Prep
-          </a>
-        )}
-        {path == "/software" ? (
-          <a className="active">
-            Software
-          </a>
-        ) : (
-          <a href="/software" className="not-active">
-            Software
-          </a>
-        )}
-        {path == "/about" ? (
-          <a className="active">
-            About
-          </a>
-        ) : (
-          <a href="/about" className="not-active">
-            About
-          </a>
-        )}
-        {path == "/get-started" ? (
-          <a className="active">
-            Get Started
-          </a>
-        ) : (
-          <a href="/get-started" className="not-active">
-            Get Started
-          </a>
-        )}
-        {path == "/fulfillment" ? (
-          <a className="active">
-            Dashboard
-          </a>
-        ) : (
-          <a href="/" className="not-active">
-            Dashboard
-          </a>
-        )}
-      </div>
-      <div className="links">
-        <a href=""><i className="uil uil-instagram"></i></a>
-        <a href=""><i className="uil uil-facebook-f"></i></a>
-      </div>
+   <>
+   {
+    isMobile == false ?  <div className="header">
+    <Logo />
+    <div className="navs">
+      {path == "/" ? (
+        <span className="active">Home</span>
+      ) : (
+        <span className="not-active" onClick={() => navigate('/')}>Home</span>
+      )}
+      {path == "/fulfillment" ? (
+        <span className="active">Fulfillment</span>
+      ) : (
+        <span className="not-active" onClick={() => navigate('/fulfillment')}>Fulfillment</span>
+      )}
+      {path == "/fba-prep" ? (
+        <span className="active">FBA Prep</span>
+      ) : (
+        <span className="not-active" onClick={() => navigate('/fba-prep')}>FBA Prep</span>
+      )}
+      {path == "/software" ? (
+        <span className="active">Software</span>
+      ) : (
+        <span className="not-active" onClick={() => navigate('/software')}>Software</span>
+      )}
+      {path == "/about" ? (
+        <span className="active">About</span>
+      ) : (
+        <span className="not-active" onClick={() => navigate('/about')}>About</span>
+      )}
+      {path == "/get-started" ? (
+        <span className="active">Get Started</span>
+      ) : (
+        <span className="not-active" onClick={() => navigate('/get-started')}>Get Started</span>
+      )}
+      {path == "/fulfillment" ? (
+        <span className="active">Dashboard</span>
+      ) : (
+        <span className="not-active" onClick={() => navigate('/dashboard')}>Dashboard</span>
+      )}
     </div>
+    <div className="links">
+      <a href="">
+        <i className="uil uil-instagram"></i>
+      </a>
+      <a href="">
+        <i className="uil uil-facebook-f"></i>
+      </a>
+    </div>
+  </div> : <MobileMenu />
+   }
+   </>
   );
 };
 
-export default Desktop;
+export default Header;

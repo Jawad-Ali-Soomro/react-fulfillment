@@ -1,8 +1,11 @@
 import React from 'react'
+import Header from '../Components/Desktop'
 
 const Started = () => {
   return (
-    <div>Started</div>
+    <div>
+      <Header />
+    </div>
   )
 }
 
