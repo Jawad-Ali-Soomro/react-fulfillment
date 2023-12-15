@@ -184,7 +184,7 @@
 
 .top-sect img {
     width: 80%;
-    height: 80%;
+    height: 70%;
 }
 
 .top-content img .not{
@@ -392,31 +392,6 @@ ul {
     font-size: 1rem;
 }
 
-@media (max-width: 600px) {
-    .work-flow .content {
-        margin-left: 10px;
-    }
-
-    .main-integrarions {
-        width: 100%;
-        gap: 30px;
-        height: 80%;
-    }
-
-    .steps {
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    .integrations .main {
-        width: 120px;
-    }
-
-    .step:not(.not):after {
-        max-width: 0;
-        overflow: hidden;
-    }
-}
 
 .inquiry {
     height: 70vh;
@@ -430,7 +405,8 @@ ul {
 
 .inquiry section {
     display: flex;
-    gap: 100px;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
 .inquiry p {
@@ -449,7 +425,6 @@ ul {
 .inquiry .main img {
     width: 250px;
     height: 150px;
-    color: maroon;
     margin-bottom: 20px;
 }
 
@@ -472,4 +447,80 @@ ul {
 
 .inquiry .main:nth-child(2) a i {
     color: blueviolet;
+}
+@media (max-width: 600px) {
+    .work-flow .content {
+        margin-left: 10px;
+    }
+
+    .top-content {
+        left: 2vh;
+    }
+
+    .top-content h1 span:nth-child(1){
+        margin-left: 50px;
+    }
+
+    .top-content h1 span:nth-child(2){
+        margin-left: 100px;
+    }
+    .top-content h1 span:nth-child(3){
+        margin-left: 150px;
+    }
+    .top-content h1 span:nth-child(4){
+        margin-left: 200px;
+    }
+
+    .top-content h2{
+        font-size: 1rem;
+        border-bottom: none;
+    }
+
+    .main-integrarions {
+        width: 100%;
+        gap: 30px;
+        height: 80%;
+    }
+
+    .top-content h1{
+        font-size: 3rem;
+    }
+
+    .steps {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .integrations .main {
+        width: 120px;
+    }
+
+    .step:not(.not):after {
+        max-width: 0;
+        overflow: hidden;
+    }
+    .inquiry .main img{
+        width: 100px;
+        height: 80px;
+    }
+    .inquiry section{
+        gap: 10px;
+        justify-content: center;
+    }
+    .inquiry{
+        height: 90vh;
+        gap: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .step{
+        height: 300px;
+    }
+
+    .top-content img{
+        height: 60%;
+        width: 60%;
+    }
 }
