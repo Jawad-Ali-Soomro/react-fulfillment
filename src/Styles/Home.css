@@ -429,10 +429,6 @@ ul {
     margin-bottom: 20px;
 }
 
-.inquiry .main i {
-    font-size: 150px;
-}
-
 .inquiry .main a {
     display: flex;
     justify-content: center;
@@ -442,13 +438,6 @@ ul {
     color: black;
 }
 
-.inquiry .main:nth-child(1) a i {
-    color: maroon;
-}
-
-.inquiry .main:nth-child(2) a i {
-    color: blueviolet;
-}
 @media (max-width: 600px) {
     .work-flow .content {
         margin-left: 10px;
@@ -517,11 +506,17 @@ ul {
     }
 
     .step{
-        height: 200px;
+        height: 300px;
     }
 
     .top-content img{
         height: 60%;
         width: 60%;
+    }
+    .inquiry .main{
+        padding: 20px;
+    }
+    .inquiry{
+        gap: 20px;
     }
 }
