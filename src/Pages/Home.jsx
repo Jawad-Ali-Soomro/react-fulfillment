@@ -37,7 +37,7 @@ const Home = () => {
             parts for you with:
           </p>
           <div className="main-carousel">
-            <div className="main">
+            <div className="main-tags">
               <h1>Same Day Shipping</h1>
               <h1>World Class Customer Service</h1>
               <h1>No Minimums</h1>
@@ -304,35 +304,35 @@ const Home = () => {
       <div className="integrations">
         <p>Our Integrations</p>
         <div className="main-integrarions">
-          <div className="main">
+          <div className="main-icon">
             <img src="./amazon.webp" alt="" />
             <p>Amazon</p>
           </div>
-          <div className="main">
+          <div className="main-icon">
             <img src="./ebay.webp" alt="" />
             <p>Ebay</p>
           </div>
-          <div className="main">
+          <div className="main-icon">
             <img src="./shopify.webp" alt="" />
             <p>Shopify</p>
           </div>
-          <div className="main">
+          <div className="main-icon">
             <img src="./etsy.svg" alt="" />
             <p>etsy</p>
           </div>
-          <div className="main">
+          <div className="main-icon">
             <img src="./woocom.svg" alt="" />
             <p>woocommerce</p>
           </div>
-          <div className="main">
+          <div className="main-icon">
             <img src="./wix.webp" alt="" />
             <p>wix</p>
           </div>
-          <div className="main">
+          <div className="main-icon">
             <img src="./walmart.webp" alt="" />
             <p>walmart</p>
           </div>
-          <div className="main">
+          <div className="main-icon">
             <img src="./sellbrite.png" alt="" />
             <p>sellbrite</p>
           </div>
@@ -341,19 +341,19 @@ const Home = () => {
       <div className="inquiry">
         <p>INQUIRE NOW</p>
         <section>
-          <div className="main">
+          <div className="main-image">
             <a href="">
               <img src="./chat.png" alt="" />
               <h1>Live Chat</h1>
             </a>
           </div>
-          <div className="main">
+          <div className="main-image">
             <a href="">
               <img src="./start.png" alt="" />
               <h1>Get Started</h1>
             </a>
           </div>
-          <div className="main">
+          <div className="main-image">
             <a href="">
               <img src="./phone.png" alt="" />
               <h1>Make A Call</h1>
@@ -366,7 +366,7 @@ const Home = () => {
           Reviews from trustpilot
         </h1>
         <p
-          style={{ fontSize: "1rem", marginBottom: "20px", marginTop: "10px" }}
+          style={{ fontSize: "1rem", marginBottom: "20px", marginTop: "10px" , textTransform:'uppercase' }}
         >
           Don't believe us? Hear it first from our customers.
         </p>
@@ -402,7 +402,7 @@ const Home = () => {
                 <p style={{ textTransform: "capitalize" }}>Jan 11, 2021</p>
               </div>
               <div
-                className="main"
+                className="main-message"
                 style={{ display: "flex", flexDirection: "column" }}
               >
                 <span>Affordable & Convenient</span>
@@ -448,7 +448,7 @@ const Home = () => {
                 <p style={{ textTransform: "capitalize" }}>Dec 28, 2020</p>
               </div>
               <div
-                className="main"
+                className="main-message"
                 style={{ display: "flex", flexDirection: "column" }}
               >
                 <span>The best 3PL I've used</span>
@@ -494,7 +494,7 @@ const Home = () => {
                 <p style={{ textTransform: "capitalize" }}>Dec 21, 2020</p>
               </div>
               <div
-                className="main"
+                className="main-message"
                 style={{ display: "flex", flexDirection: "column" }}
               >
                 <span>Eastern Fulfilllment is Leading the Way</span>
@@ -503,8 +503,7 @@ const Home = () => {
                   the last several months. We had to find an alternate due to
                   under performance of our previous vendor. They have been
                   excellent with their responsiveness, communication, and level
-                  of service. I can't say enough about their attention to detail
-                  and suggestions to improve..
+                  of service. I can't say enough about their attention to detail.
                 </p>
               </div>
             </div>
@@ -517,7 +516,7 @@ const Home = () => {
               <section>
                 <i className="uil uil-user avatar"></i>
               </section>
-              <section style={{ flexDirection: "column", fontWeight: "300" }}>
+              <section style={{ flexDirection: "column", fontWeight: "300" , marginRight:'100px' }}>
                 <span>Rochak G</span>
                 <span>
                   <i class="uil uil-location-point"></i>
@@ -540,7 +539,7 @@ const Home = () => {
                 <p style={{ textTransform: "capitalize" }}>Dec 16, 2020</p>
               </div>
               <div
-                className="main"
+                className="main-message"
                 style={{ display: "flex", flexDirection: "column" }}
               >
                 <span>Great to work with.</span>

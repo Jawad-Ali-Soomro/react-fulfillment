@@ -141,10 +141,11 @@
     width: 5px;
 }
 
-.main-carousel .main h1 {
+.main-carousel .main-tags h1 {
     min-height: 100px;
-    font-size: 1rem;
+    font-size: 2rem;
     justify-content: center;
+    display: flex;
     align-items: center;
 }
 
@@ -376,7 +377,7 @@ ul {
     margin-bottom: 30px;
 }
 
-.main-integrarions .main {
+.main-integrarions .main-icon {
     width: 200px;
     display: flex;
     justify-content: center;
@@ -384,12 +385,12 @@ ul {
     flex-direction: column;
 }
 
-.main-integrarions .main img {
+.main-integrarions .main-icon img {
     width: 80px;
     height: 60px;
 }
 
-.main-integrarions .main p {
+.main-integrarions .main-icon p {
     margin-top: 20px;
     font-weight: 300;
     color: black;
@@ -419,7 +420,7 @@ ul {
     font-size: 1.2rem;
 }
 
-.inquiry .main {
+.inquiry .main-image {
     padding: 50px;
     display: flex;
     justify-content: center;
@@ -427,13 +428,13 @@ ul {
     flex-direction: column;
 }
 
-.inquiry .main img {
+.inquiry .main-image img {
     width: 250px;
     height: 150px;
     margin-bottom: 20px;
 }
 
-.inquiry .main a {
+.inquiry .main-image a {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -482,6 +483,11 @@ ul {
 .reviews .main-review {
     display: flex;
     flex-wrap: wrap;
+}
+
+.main-review .main-message p{
+    max-width: 500px;
+    margin-top: 10px;
 }
 
 .reviews .main-review .top {
@@ -611,7 +617,7 @@ ul {
         overflow: hidden;
     }
 
-    .inquiry .main img {
+    .inquiry .main-image img {
         width: 100px;
         height: 50px;
     }
