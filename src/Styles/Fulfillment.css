@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.fullfilment {
+    margin-top: 10vh;
+}
+
+.flex {
+    display: flex;
+}
+
+.col {
+    flex-direction: column;
+}
+
+.numbering {
+    width: 60px;
+    height: 60px;
+    background: maroon;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 50%;
+    font-size: 2rem;
+}
+
+img {
+    width: 500px;
+}
+
+.hero-top{
+    padding-bottom: 100px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .1)  ;
+}
+
+.hero-top h1 {
+    max-width: 560px;
+    font-size: 3rem;
+    margin-top: 80px;
+    margin-left: 80px;
+}
+
+.hero-top .quote {
+    margin-left: 80px;
+    margin-top: 30px;
+    font-size: 1.5rem;
+    color: blueviolet;
+}
+
+.quote i {
+    margin-left: 10px;
+}
+
+.left-sect {
+    margin-top: 30px;
+    margin-left: 80px;
+}
+
+.left-sect p {
+    font-weight: 300;
+    line-height: 40px;
+    color: maroon;
+}
+
+.left-sect span {
+    font-weight: 300;
+}
+
+.wrap-content {
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.right-sect img {
+    margin-left: 50px;
+    height: 250px;
+}
+
+.fees{
+    padding: 60px 0;
+    width: 100%;
+    padding-bottom: 100px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .1)  ;
+}
+
+.fees h1{
+    font-size: 3rem;
+    margin-left: 80px;
+}
+
+.fees h2{
+    margin-left: 80px;
+    font-size: 2rem;
+    color: maroon;
+}
+
+.fees p{
+    margin-left: 80px;
+    max-width: 600px;
+    margin-top: 30px;
+    font-weight: 300;
+}
+
+.fees h1 span{
+    background-image: linear-gradient(45deg, maroon, rgba(255, 255, 255, 0.226));
+    color: transparent;
+    background-clip: text;
+}
+
+.fees .bottom-sect{
+    justify-content: space-around;
+    margin-top: 100px;
+    padding-right: 100px;
+}
+
+.fees .bottom-sect p{
+    max-width: 300px;
+}
+
+
+.easy-step{
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    align-items: center;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .1)  ;
+}
+
+.easy-step img{
+    width: 450px;
+}
+
+.easy-step .small{
+    width: 300px;
+    height: 300px;
+    margin-right: 100px;
+}
+
+.easy-step:last-child .small{
+    width: 400px;
+    height: 250px;
+}
+
+.easy-step h2{
+    color: rgba(0, 0, 0, .5);
+}
+
+.easy-step p{
+    font-weight: 300;
+    max-width: 350px;
+    line-height: 25px;
+    margin-top: 10px;
+}

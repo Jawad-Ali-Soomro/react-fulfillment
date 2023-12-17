@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "../Styles/Home.css";
 import Header from "../Components/Desktop";
+import Slider from "../Components/Swiper";
 const Home = () => {
   const [isMobile, setIsMobile] = useState(false);
   useEffect(() => {
@@ -19,7 +20,12 @@ const Home = () => {
       <Header />
       <div className="main-hero">
         <div className="top-content">
-          <h1><span>STORE </span><span>PREP</span><span>PACK</span><span>SHIP</span></h1>
+          <h1>
+            <span>STORE </span>
+            <span>PREP</span>
+            <span>PACK</span>
+            <span>SHIP</span>
+          </h1>
           <h2>Trusted By Online Sellers Worldwide</h2>
           <a href="/get-started">
             GO FOR IT <i className="uil uil-angle-right"></i>
@@ -293,7 +299,7 @@ const Home = () => {
           </div>
         </>
       ) : (
-        <h1>Hi</h1>
+        <Slider />
       )}
       <div className="integrations">
         <p>Our Integrations</p>
@@ -354,6 +360,213 @@ const Home = () => {
             </a>
           </div>
         </section>
+      </div>
+      <div className="reviews">
+        <h1 style={{ textTransform: "uppercase", fontSize: "1rem" }}>
+          Reviews from trustpilot
+        </h1>
+        <p
+          style={{ fontSize: "1rem", marginBottom: "20px", marginTop: "10px" }}
+        >
+          Don't believe us? Hear it first from our customers.
+        </p>
+        <div className="main-review">
+          <div className="review">
+            <div
+              className="top"
+              style={{ borderBottom: "1px solid rgba(0, 0, 0, 0.2)" }}
+            >
+              <section>
+                <i className="uil uil-user avatar"></i>
+              </section>
+              <section style={{ flexDirection: "column", fontWeight: "300" }}>
+                <span>John Tran</span>
+                <span>
+                  <i class="uil uil-location-point"></i>
+                  <span>US</span>
+                </span>
+              </section>
+            </div>
+            <div className="bottom">
+              <div
+                className="top"
+                style={{ justifyContent: "space-between", marginTop: "10px" }}
+              >
+                <div className="stars" style={{ color: "maroon" }}>
+                  <i className="uil uil-star"></i>
+                  <i className="uil uil-star"></i>
+                  <i className="uil uil-star"></i>
+                  <i className="uil uil-star"></i>
+                  <i className="uil uil-star"></i>
+                </div>
+                <p style={{ textTransform: "capitalize" }}>Jan 11, 2021</p>
+              </div>
+              <div
+                className="main"
+                style={{ display: "flex", flexDirection: "column" }}
+              >
+                <span>Affordable & Convenient</span>
+                <p>
+                  I definitely recommend this 3PL company if you are looking to
+                  find a warehouse to store your products in safe hands. These
+                  guys go above and beyond to help their clients with their
+                  needs and will guide you every step of the way. They also have
+                  a website that makes it super easy to replenish your
+                  inventory.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="review">
+            <div
+              className="top"
+              style={{ borderBottom: "1px solid rgba(0, 0, 0, 0.2)" }}
+            >
+              <section>
+                <i className="uil uil-user avatar"></i>
+              </section>
+              <section style={{ flexDirection: "column", fontWeight: "300" }}>
+                <span>Michael Jordan</span>
+                <span>
+                  <i class="uil uil-location-point"></i>
+                  <span>US</span>
+                </span>
+              </section>
+            </div>
+            <div className="bottom">
+              <div
+                className="top"
+                style={{ justifyContent: "space-between", marginTop: "10px" }}
+              >
+                <div className="stars" style={{ color: "maroon" }}>
+                  <i className="uil uil-star"></i>
+                  <i className="uil uil-star"></i>
+                  <i className="uil uil-star"></i>
+                  <i className="uil uil-star"></i>
+                  <i className="uil uil-star"></i>
+                </div>
+                <p style={{ textTransform: "capitalize" }}>Dec 28, 2020</p>
+              </div>
+              <div
+                className="main"
+                style={{ display: "flex", flexDirection: "column" }}
+              >
+                <span>The best 3PL I've used</span>
+                <p>
+                  Eastern Fulfilllment has been a savior for my business. With
+                  the boom in online sales this year that put a massive strain
+                  on the logistics industry, I was having severe problems with
+                  my previous 3PL provider. I switched to Eastern Fulfilllment
+                  and they simply do what they say they will, on time and
+                  correctly. Thanks guys!
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="review">
+            <div
+              className="top"
+              style={{ borderBottom: "1px solid rgba(0, 0, 0, 0.2)" }}
+            >
+              <section>
+                <i className="uil uil-user avatar"></i>
+              </section>
+              <section style={{ flexDirection: "column", fontWeight: "300" }}>
+                <span>Anthony Dickson</span>
+                <span>
+                  <i class="uil uil-location-point"></i>
+                  <span>US</span>
+                </span>
+              </section>
+            </div>
+            <div className="bottom">
+              <div
+                className="top"
+                style={{ justifyContent: "space-between", marginTop: "10px" }}
+              >
+                <div className="stars" style={{ color: "maroon" }}>
+                  <i className="uil uil-star"></i>
+                  <i className="uil uil-star"></i>
+                  <i className="uil uil-star"></i>
+                  <i className="uil uil-star"></i>
+                  <i className="uil uil-star"></i>
+                </div>
+                <p style={{ textTransform: "capitalize" }}>Dec 21, 2020</p>
+              </div>
+              <div
+                className="main"
+                style={{ display: "flex", flexDirection: "column" }}
+              >
+                <span>Eastern Fulfilllment is Leading the Way</span>
+                <p>
+                  Eastern Fulfilllment has manage our fulfilment services for
+                  the last several months. We had to find an alternate due to
+                  under performance of our previous vendor. They have been
+                  excellent with their responsiveness, communication, and level
+                  of service. I can't say enough about their attention to detail
+                  and suggestions to improve..
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="review">
+            <div
+              className="top"
+              style={{ borderBottom: "1px solid rgba(0, 0, 0, 0.2)" }}
+            >
+              <section>
+                <i className="uil uil-user avatar"></i>
+              </section>
+              <section style={{ flexDirection: "column", fontWeight: "300" }}>
+                <span>Rochak G</span>
+                <span>
+                  <i class="uil uil-location-point"></i>
+                  <span>US</span>
+                </span>
+              </section>
+            </div>
+            <div className="bottom">
+              <div
+                className="top"
+                style={{ justifyContent: "space-between", marginTop: "10px" }}
+              >
+                <div className="stars" style={{ color: "maroon" }}>
+                  <i className="uil uil-star"></i>
+                  <i className="uil uil-star"></i>
+                  <i className="uil uil-star"></i>
+                  <i className="uil uil-star"></i>
+                  <i className="uil uil-star"></i>
+                </div>
+                <p style={{ textTransform: "capitalize" }}>Dec 16, 2020</p>
+              </div>
+              <div
+                className="main"
+                style={{ display: "flex", flexDirection: "column" }}
+              >
+                <span>Great to work with.</span>
+                <p>
+                  Been with Eastern Fulfilllment for over a year now. Good
+                  prices and great support team. Small issues sometimes here and
+                  there but It would be unrealistic to expect 100% flawlessness.
+                  How Eastern Fulfilllment makes up for it is by having a fast
+                  and responsive customer support team that are always there for
+                  you.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="join-us">
+        <div>
+          <h1>Join the community of hundreds of sellers just like you.</h1>
+          <span>
+            GO FOR IT <i className="uil uil-angle-right"></i>
+          </span>
+        </div>
+        <div>
+          <img src="./community.png" alt="" />
+        </div>
       </div>
     </div>
   );

@@ -1,3 +1,8 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
 .header {
     width: 100%;
     height: 10vh;
@@ -24,6 +29,7 @@
 
 .logo img {
     width: 60px;
+    height: 40px;
 }
 
 .logo a h2 {
@@ -50,7 +56,7 @@
     transition: .3s;
     cursor: pointer;
     font-family: Roboto, sans-serif;
-    text-transform: uppercase;
+    text-transform: capitalize;
 }
 
 .navs .not-active:hover {
@@ -64,7 +70,7 @@
     position: relative;
     color: maroon;
     cursor: pointer;
-    text-transform: uppercase;
+    text-transform: capitalize;
 }
 
 .active::after {

@@ -209,7 +209,11 @@ What happens when I get an order?`,
             <div>------------------ OR ------------------</div>
             <form className="form-style">
               <div className="row-1">
-                <img src="./media/customer-icon.svg" alt="" />
+                <img
+                  src="./media/customer-icon.svg"
+                  alt=""
+                  style={{ width: "50px" }}
+                />
                 <input
                   type="text"
                   name="firstName"
@@ -224,7 +228,11 @@ What happens when I get an order?`,
                 />
               </div>
               <div className="row-2">
-                <img src="./media/email-icon.svg" alt="" />
+                <img
+                  src="./media/email-icon.svg"
+                  alt=""
+                  style={{ width: "50px" }}
+                />
                 <input
                   type="text"
                   name="email"
@@ -233,7 +241,11 @@ What happens when I get an order?`,
                 />
               </div>
               <div className="row-3">
-                <img src="./media/phone-icon.svg" alt="" />
+                <img
+                  src="./media/phone-icon.svg"
+                  alt=""
+                  style={{ width: "50px" }}
+                />
                 <input
                   type="text"
                   name="countryCode"
