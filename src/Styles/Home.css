@@ -374,10 +374,18 @@ ul {
 .integrations p {
     text-transform: uppercase;
     font-size: 1.2rem;
-    font-weight: 300;
+    font-weight: 900;
     color: rgba(137, 43, 226, 0.541);
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
+
+.integrations span{
+    margin-bottom: 30px;
+    max-width: 500px;
+    text-align: center;
+    font-weight: 300;
+}
+
 
 .main-integrarions .main-icon {
     width: 200px;
@@ -430,8 +438,9 @@ ul {
     flex-direction: column;
 }
 
-.inquiry .main-image i {
-    font-size: 5rem;
+.inquiry .main-image img {
+    width: 200px;
+    height: 100px;
     margin-bottom: 20px;
     color: maroon;
 }

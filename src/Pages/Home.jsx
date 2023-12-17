@@ -305,6 +305,7 @@ const Home = () => {
       )}
       <div className="integrations">
         <p>Our Integrations</p>
+        <span>Librex offers unlimited selling integrations for all accounts via custom API’s to top ecommerce platforms. We can integrate them all!</span>
         <div className="main-integrarions">
           <div className="main-icon">
             <img src="./amazon.png" alt="" />
@@ -337,19 +338,19 @@ const Home = () => {
         <section>
           <div className="main-image">
             <a href="">
-              <i className="uil uil-envelope"></i>
+              <img src="./chat.svg" alt="" />
               <h1>Live Chat</h1>
             </a>
           </div>
           <div className="main-image">
             <a href="">
-            <i class="uil uil-rocket"></i>
+              <img src="./notes.svg" alt="" />
               <h1>Get Started</h1>
             </a>
           </div>
           <div className="main-image">
             <a href="">
-            <i class="uil uil-phone"></i>
+              <img src="./phone.svg" alt="" />
               <h1>Make A Call</h1>
             </a>
           </div>

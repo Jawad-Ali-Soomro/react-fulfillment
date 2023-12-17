@@ -5,7 +5,7 @@ const Logo = () => {
     <div className='logo'>
         <a href="">
             <img src="./logo.png" alt="" />
-            {/* <h2>Eastern <span>Fulfillment</span></h2> */}
+            <h2>Eastern <span>Fulfillment</span></h2>
         </a>
     </div>
   )
