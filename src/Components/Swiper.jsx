@@ -23,14 +23,8 @@ export default function Slider() {
         className="mySwiper"
       >
         <SwiperSlide>
-          <div className="swiper-intro">
-            <h2>What Comes with our partnership!</h2>
-            <i className="uil uil-arrow-right"></i>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
           <div className="right-main" style={{ flexDirection: "column" }}>
-            <section className="content">
+            <section className="content" style={{justifyContent:'start' , alignItems:'start'}}>
               <h1 style={{fontSize:'2.5rem'}}>Dashboard</h1>
               <p style={{ maxWidth: "80%", marginLeft: "10%" }}>
                 Get a full overview of your eCommerce business in seconds.
