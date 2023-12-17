@@ -187,9 +187,11 @@ What happens when I get an order?`,
           <div className="sub-section-1">
             <div className="gray-text">WHAT'S INCLUDED</div>
             <div className="items">
-              {data.map(({ source, children }) => {
+              {data.map(({ source, children }, index) => {
                 return (
-                  <SubSectionItems source={source}>{children}</SubSectionItems>
+                  <SubSectionItems key={index} source={source}>
+                    {children}
+                  </SubSectionItems>
                 );
               })}
             </div>
@@ -264,8 +266,10 @@ What happens when I get an order?`,
       <div className="section-3">
         <h1>FAQ</h1>
         <div className="accordion">
-          {accordData.map(({ id, label, content }) => {
-            return <Accord id={id} label={label} content={content} />;
+          {accordData.map(({ id, label, content }, index) => {
+            return (
+              <Accord key={index} id={id} label={label} content={content} />
+            );
           })}
         </div>
       </div>
