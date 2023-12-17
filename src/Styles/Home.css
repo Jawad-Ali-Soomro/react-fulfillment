@@ -12,6 +12,8 @@
 .main-hero {
     height: 100vh;
     position: relative;
+    background: url('./bg.jpg');
+    background-size: cover;
 }
 
 .top-content {
@@ -24,7 +26,7 @@
 
 .top-content h1 {
     color: maroon;
-    font-weight: 300;
+    font-weight: 900;
     text-transform: uppercase;
     font-size: 5rem;
     display: flex;

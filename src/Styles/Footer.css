@@ -1,0 +1,26 @@
+.footer{
+    width: 100%;
+    height: 60vh;
+    background: black;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    color: white;
+}
+.copyright{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.copyright p{
+    font-weight: 900;
+}
+
+.copyright p span{
+    font-weight: 300;
+}

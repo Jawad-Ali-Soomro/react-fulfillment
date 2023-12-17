@@ -5,7 +5,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "../Styles/Swiper.css";
-import { Pagination } from "swiper/modules";
+import { Autoplay, Pagination } from "swiper/modules";
 
 export default function Slider() {
   const pagination = {
@@ -19,7 +19,7 @@ export default function Slider() {
     <>
       <Swiper
         pagination={pagination}
-        modules={[Pagination]}
+        modules={[Pagination , Autoplay]}
         className="mySwiper"
       >
         <SwiperSlide>
@@ -55,9 +55,9 @@ export default function Slider() {
                 src="./dashboard.png"
                 alt=""
                 style={{
-                  maxWidth: "80%",
+                  width: "300px",
                   marginLeft: "10%",
-                  maxHeight: "300px",
+                  height: "200px",
                 }}
               />
             </section>

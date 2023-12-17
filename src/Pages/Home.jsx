@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import "../Styles/Home.css";
 import Header from "../Components/Desktop";
 import Slider from "../Components/Swiper";
+import Reviews from "../Components/Reviews";
+import Footer from "../Components/Footer";
 const Home = () => {
   const [isMobile, setIsMobile] = useState(false);
   useEffect(() => {
@@ -353,6 +355,7 @@ const Home = () => {
           </div>
         </section>
       </div>
+      <Reviews />
       <div className="join-us">
         <div>
           <h1>Join the community of hundreds of sellers just like you.</h1>
@@ -364,6 +367,7 @@ const Home = () => {
           <img src="./community.png" alt="" />
         </div>
       </div>
+      <Footer />
     </div>
   );
 };
