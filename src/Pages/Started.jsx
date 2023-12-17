@@ -182,7 +182,7 @@ What happens when I get an order?`,
   return (
     <div>
       <Header />
-      <div className="main">
+      <div className="s-main">
         <div className="section-1">
           <div className="sub-section-1">
             <div className="gray-text">WHAT'S INCLUDED</div>

@@ -5,22 +5,28 @@ const Software = () => {
   const scrollFn = (name) => {
     switch (name) {
       case "dashboard":
-        document.querySelector(".slide").style.backgroundColor = "red";
+        document.querySelector(".slide").style.left = "0";
         break;
       case "order":
-        document.querySelector(".slide").style.backgroundColor = "red";
+        document.querySelector(".slide").style.left = "-100%";
         break;
       case "inventory":
-        document.querySelector(".slide").style.backgroundColor = "red";
+        document.querySelector(".slide").style.left = "-200%";
         break;
       case "inbound-shipment":
-        document.querySelector(".slide").style.backgroundColor = "red";
+        document.querySelector(".slide").style.left = "-300%";
         break;
       case "fba-request":
-        document.querySelector(".slide").style.backgroundColor = "red";
+        document.querySelector(".slide").style.left = "-400%";
         break;
     }
   };
+  const IconComponent = ({ location, content }) => (
+    <div className="iconMenu">
+      <img src={location} alt={location} />
+      <div className="content">{content}</div>
+    </div>
+  );
 
   return (
     <div>
@@ -58,19 +64,39 @@ const Software = () => {
               </div>
               <div>
                 <input type="radio" name="checked" id="order" />
-                <label htmlFor="order">Order</label>
+                <label
+                  htmlFor="order"
+                  onClick={(e) => scrollFn(e.target.getAttribute("for"))}
+                >
+                  Order
+                </label>
               </div>
               <div>
                 <input type="radio" name="checked" id="inventory" />
-                <label htmlFor="inventory">Inventory</label>
+                <label
+                  htmlFor="inventory"
+                  onClick={(e) => scrollFn(e.target.getAttribute("for"))}
+                >
+                  Inventory
+                </label>
               </div>
               <div>
                 <input type="radio" name="checked" id="inbound-shipment" />
-                <label htmlFor="inbound-shipment">Inbound Shipment</label>
+                <label
+                  htmlFor="inbound-shipment"
+                  onClick={(e) => scrollFn(e.target.getAttribute("for"))}
+                >
+                  Inbound Shipment
+                </label>
               </div>
               <div>
                 <input type="radio" name="checked" id="fba-request" />
-                <label htmlFor="fba-request">FBA Request</label>
+                <label
+                  htmlFor="fba-request"
+                  onClick={(e) => scrollFn(e.target.getAttribute("for"))}
+                >
+                  FBA Request
+                </label>
               </div>
             </div>
           </div>
@@ -79,11 +105,11 @@ const Software = () => {
               <div className="data">
                 <div>
                   <h1>Dashboard</h1>
-                  <div>
+                  <div className="content">
                     Get a full overview of your eCommerce business in seconds.
                     Preview all of your important store data all in one place.
                   </div>
-                  <div>FEATURES</div>
+                  <div className="title">FEATURES</div>
                   <ul>
                     <li>Full account overview</li>
                     <li>Inventory status alerts</li>
@@ -94,12 +120,12 @@ const Software = () => {
               </div>
               <div className="data">
                 <div>
-                  <h1>Dashboard</h1>
-                  <div>
+                  <h1>Order</h1>
+                  <div className="content">
                     Get a full overview of your eCommerce business in seconds.
                     Preview all of your important store data all in one place.
                   </div>
-                  <div>FEATURES</div>
+                  <div className="title">FEATURES</div>
                   <ul>
                     <li>Full account overview</li>
                     <li>Inventory status alerts</li>
@@ -110,12 +136,12 @@ const Software = () => {
               </div>
               <div className="data">
                 <div>
-                  <h1>d</h1>
-                  <div>
+                  <h1>Inventory</h1>
+                  <div className="content">
                     Get a full overview of your eCommerce business in seconds.
                     Preview all of your important store data all in one place.
                   </div>
-                  <div>FEATURES</div>
+                  <div className="title">FEATURES</div>
                   <ul>
                     <li>Full account overview</li>
                     <li>Inventory status alerts</li>
@@ -126,12 +152,12 @@ const Software = () => {
               </div>
               <div className="data">
                 <div>
-                  <h1>Dashboard</h1>
-                  <div>
+                  <h1>Inbound Shipment</h1>
+                  <div className="content">
                     Get a full overview of your eCommerce business in seconds.
                     Preview all of your important store data all in one place.
                   </div>
-                  <div>FEATURES</div>
+                  <div className="title">FEATURES</div>
                   <ul>
                     <li>Full account overview</li>
                     <li>Inventory status alerts</li>
@@ -142,12 +168,12 @@ const Software = () => {
               </div>
               <div className="data">
                 <div>
-                  <h1>Dashboard</h1>
-                  <div>
+                  <h1>FBA Request</h1>
+                  <div className="content">
                     Get a full overview of your eCommerce business in seconds.
                     Preview all of your important store data all in one place.
                   </div>
-                  <div>FEATURES</div>
+                  <div className="title">FEATURES</div>
                   <ul>
                     <li>Full account overview</li>
                     <li>Inventory status alerts</li>
@@ -159,6 +185,60 @@ const Software = () => {
             </div>
           </div>
         </div>
+        <div className="sectionThree">
+          <h1>Software Feature</h1>
+          <div className="main-container">
+            <IconComponent
+              location={"./main/support.svg"}
+              content={`24/7 U.S. Based Customer Support`}
+            />
+            <IconComponent
+              location={"./main/integrations.svg"}
+              content={`Unlimited Selling Integrations`}
+            />
+            <IconComponent
+              location={"./main/dataImporting.svg"}
+              content={`Data Importing`}
+            />
+            <IconComponent
+              location={"./main/realtimeUpdates.svg"}
+              content={`Real-time Updates`}
+            />
+            <IconComponent
+              location={"./main/return.svg"}
+              content={`Return Management`}
+            />
+            <IconComponent
+              location={"./main/analysis.svg"}
+              content={`Reporting & Analytics`}
+            />
+            <IconComponent
+              location={"./main/softwareSuite.svg"}
+              content={`On Website Software Suite`}
+            />
+            <IconComponent
+              location={"./main/inventoryManagement.svg"}
+              content={`Inventory Management`}
+            />
+            <IconComponent
+              location={"./main/orderTracking.svg"}
+              content={`Order Tracking`}
+            />
+            <IconComponent
+              location={"./main/cloudBased.svg"}
+              content={`Cloud Based Platform`}
+            />
+            <IconComponent
+              location={"./main/orderProcessing.svg"}
+              content={`Automated Order Processing`}
+            />
+            <IconComponent
+              location={"./main/brandedPackaging.svg"}
+              content={`Branded Packaging Slips & Labels`}
+            />
+          </div>
+        </div>
+        <div className="sectionFour"></div>
       </div>
     </div>
   );
