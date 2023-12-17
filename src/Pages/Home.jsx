@@ -64,7 +64,7 @@ const Home = () => {
       <div className="steps">
         <div className="step">
           <div className="top-sect">
-            <img src="./send.png" alt="" />
+            <img src="./send.png" alt="" className="rotate"/>
           </div>
           <section className="main-step">
             <h1>1</h1>
@@ -305,36 +305,28 @@ const Home = () => {
         <p>Our Integrations</p>
         <div className="main-integrarions">
           <div className="main-icon">
-            <img src="./amazon.webp" alt="" />
+            <img src="./amazon.png" alt="" />
             <p>Amazon</p>
           </div>
           <div className="main-icon">
-            <img src="./ebay.webp" alt="" />
+            <img src="./ebay.png" alt="" />
             <p>Ebay</p>
           </div>
           <div className="main-icon">
-            <img src="./shopify.webp" alt="" />
+            <img src="./shopify.png" alt="" />
             <p>Shopify</p>
           </div>
           <div className="main-icon">
-            <img src="./etsy.svg" alt="" />
-            <p>etsy</p>
-          </div>
-          <div className="main-icon">
-            <img src="./woocom.svg" alt="" />
+            <img src="./woocom.png" alt="" />
             <p>woocommerce</p>
           </div>
           <div className="main-icon">
-            <img src="./wix.webp" alt="" />
+            <img src="./wix.png" alt="" />
             <p>wix</p>
           </div>
           <div className="main-icon">
-            <img src="./walmart.webp" alt="" />
+            <img src="./wallmart.png" alt="" />
             <p>walmart</p>
-          </div>
-          <div className="main-icon">
-            <img src="./sellbrite.png" alt="" />
-            <p>sellbrite</p>
           </div>
         </div>
       </div>
@@ -343,19 +335,19 @@ const Home = () => {
         <section>
           <div className="main-image">
             <a href="">
-              <img src="./chat.png" alt="" />
+              <i className="uil uil-envelope"></i>
               <h1>Live Chat</h1>
             </a>
           </div>
           <div className="main-image">
             <a href="">
-              <img src="./start.png" alt="" />
+            <i class="uil uil-rocket"></i>
               <h1>Get Started</h1>
             </a>
           </div>
           <div className="main-image">
             <a href="">
-              <img src="./phone.png" alt="" />
+            <i class="uil uil-phone"></i>
               <h1>Make A Call</h1>
             </a>
           </div>

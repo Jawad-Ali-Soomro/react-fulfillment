@@ -56,7 +56,7 @@ const Header = () => {
       ) : (
         <span className="not-active" onClick={() => navigate('/get-started')}>Get Started</span>
       )}
-      {path == "/fulfillment" ? (
+      {path == "/dashboard" ? (
         <span className="active">Dashboard</span>
       ) : (
         <span className="not-active" onClick={() => navigate('/dashboard')}>Dashboard</span>
