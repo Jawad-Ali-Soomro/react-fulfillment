@@ -66,7 +66,7 @@ const Home = () => {
       <div className="steps">
         <div className="step">
           <div className="top-sect">
-            <img src="./send.png" alt="" className="rotate"/>
+            <img src="./send.png" alt=""  style={{width:'200px' , height:'150px'}}/>
           </div>
           <section className="main-step">
             <h1>1</h1>
@@ -75,7 +75,7 @@ const Home = () => {
         </div>
         <div className="step">
           <div className="top-sect">
-            <img src="./store.png" alt="" />
+            <img src="./store.png" alt="" style={{width:'200px' , height:'150px'}} />
           </div>
           <section className="main-step">
             <h1>2</h1>
@@ -84,7 +84,7 @@ const Home = () => {
         </div>
         <div className="step not">
           <div className="top-sect">
-            <img src="./ship.png" alt="" />
+            <img src="./ship.png" alt="" style={{width:'200px' , height:'150px'}}  />
           </div>
           <section className="main-step">
             <h1>3</h1>
