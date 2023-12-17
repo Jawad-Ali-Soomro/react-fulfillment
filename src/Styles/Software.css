@@ -1,0 +1,73 @@
+.main {
+  overflow: hidden;
+}
+
+.sectionOne {
+  height: 90vh;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.sectionOne > * {
+  width: 50%;
+}
+.sectionOne .sub-section-1 {
+  padding: 10px 50px;
+}
+.sectionOne .sub-section-1 h1 {
+  font-size: 3rem;
+}
+.sectionOne .sub-section-1 h1 span {
+  -webkit-text-fill-color: transparent;
+  background: linear-gradient(330.34deg, #72e4ff 25.66%, #439fff 72.47%);
+  -webkit-background-clip: text;
+}
+.sectionOne .sub-section-1 > span {
+  font-size: 1.3rem;
+}
+.sectionOne .sub-section-2 {
+  width: 700px;
+  position: relative;
+}
+.sectionOne .sub-section-2 > *:first-child {
+  margin-bottom: 70px;
+}
+.sectionOne .sub-section-2 > *:nth-last-child(2) {
+  left: 50px;
+  top: 100px;
+  position: absolute;
+}
+.sectionOne .sub-section-2 > *:last-child {
+  color: rgba(128, 128, 128, 0.685);
+  display: block;
+  padding: 30px;
+}
+
+.sectionTwo {
+  display: flex;
+  max-height: 70vh;
+  overflow: hidden;
+}
+.sectionTwo .sub-section-1 {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  gap: 100px;
+}
+.sectionTwo .sub-section-1 .c-1 {
+  font-size: 1.3rem;
+  color: gray;
+}
+.sectionTwo .sub-section-1 .radio-btn {
+  display: flex;
+  flex-direction: column;
+}
+.sectionTwo .sub-section-1 .radio-btn div {
+  display: flex;
+  gap: 10px;
+}
+.sectionTwo .sub-section-2 {
+  width: calc(100vw - 200px);
+  background-color: orange;
+}/*# sourceMappingURL=Software.css.map */
