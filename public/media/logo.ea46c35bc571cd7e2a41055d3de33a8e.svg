@@ -1,0 +1,20 @@
+<svg id="librex_logo" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0 3.75C0 1.67893 1.67893 0 3.75 0H21.25C23.3211 0 25 1.67893 25 3.75V21.25C25 23.3211 23.3211 25 21.25 25H3.75C1.67893 25 0 23.3211 0 21.25V3.75Z" fill="#C4C4C4"/>
+<path d="M0 3.75C0 1.67893 1.67893 0 3.75 0H21.25C23.3211 0 25 1.67893 25 3.75V21.25C25 23.3211 23.3211 25 21.25 25H3.75C1.67893 25 0 23.3211 0 21.25V3.75Z" fill="url(#paint0_linear_2709_178)"/>
+<g clip-path="url(#clip0_2709_178)">
+<path d="M9.51609 10.9806L5.85229 8.87931L12.8746 5L19.8789 8.91523L16.0355 10.9806L12.7848 9.18463L9.51609 10.9806Z" fill="white"/>
+<path d="M5.85229 16.6918L12.8746 20.625L12.8027 16.4583L9.55201 14.6264V10.9986L5.88821 8.89728L5.85229 16.6918Z" fill="#FAFAFA"/>
+<path d="M12.7668 16.4405L12.8387 20.6072L19.843 16.7099L19.861 8.91534L16.0176 10.9807V14.6086L12.7668 16.4405Z" fill="#F2F2F2"/>
+</g>
+<defs>
+<linearGradient id="paint0_linear_2709_178" x1="4.46429" y1="2.57732" x2="23.521" y2="19.3404" gradientUnits="userSpaceOnUse">
+<stop stop-color="#18BAE6"/>
+<stop offset="0.328125" stop-color="#3173CC"/>
+<stop offset="0.671875" stop-color="#453CB8"/>
+<stop offset="1" stop-color="#460F79"/>
+</linearGradient>
+<clipPath id="clip0_2709_178">
+<rect x="5" y="5" width="15.625" height="15.625" rx="7.8125" fill="white"/>
+</clipPath>
+</defs>
+</svg>
