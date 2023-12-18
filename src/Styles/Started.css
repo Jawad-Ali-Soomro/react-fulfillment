@@ -1,6 +1,6 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
-.s-main {
+.started-main {
   margin-top: 10vh;
   padding: 10px;
   max-width: 1680px;
@@ -8,71 +8,88 @@
   margin-right: auto;
   font-family: Roboto, san-sarif;
 }
-.s-main .section-1 {
+.started-main .section-1 {
   display: flex;
   gap: 10px;
 }
-.s-main .section-1 > * {
+.started-main .section-1 > * {
   width: 800px;
   padding: 10px;
 }
-.s-main .section-1 .sub-section-1 .gray-text {
+.started-main .section-1 .sub-section-1 .gray-text {
   color: gray;
   margin: 20px 0px;
 }
-.s-main .section-1 .sub-section-1 .items {
+.started-main .section-1 .sub-section-1 .items {
   margin: 70px 10px;
   display: flex;
   gap: 10px;
   flex-wrap: wrap;
   color: gray;
 }
-.s-main .section-1 .sub-section-1 .items .item {
+.started-main .section-1 .sub-section-1 .items .item {
   margin: 10px 0px;
   width: calc(50% - 15px);
   display: flex;
   gap: 10px;
   align-items: center;
 }
-.s-main .section-1 .sub-section-1 .items .item .blue {
+.started-main .section-1 .sub-section-1 .items .item .blue {
   color: dodgerblue;
   font-weight: bold;
   margin: 5px;
 }
-.s-main .section-1 .sub-section-2 {
+.started-main .section-1 .sub-section-2 {
   width: 600px;
   margin: 50px 50px 0px 0px;
   padding: 40px 20px;
   border-radius: 20px;
   box-shadow: 5px 5px 20px rgba(136, 136, 136, 0.3960784314);
 }
-.s-main .section-1 .sub-section-2 > *:first-child {
+.started-main .section-1 .sub-section-2 > *:first-child {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
-.s-main .section-1 .sub-section-2 > *:first-child *:first-child {
+.started-main .section-1 .sub-section-2 > *:first-child *:first-child {
   font-size: 2rem;
   color: #8b00f8;
 }
-.s-main .section-1 .sub-section-2 > *:first-child *:nth-child(2) {
+.started-main .section-1 .sub-section-2 > *:first-child *:nth-child(2) {
   color: gray;
 }
-.s-main .section-1 .sub-section-2 > *:nth-child(2) {
-  color: gray;
+.started-main .section-1 .sub-section-2 > *:nth-child(2) {
+  color: rgba(128, 128, 128, 0.5215686275);
   text-align: center;
+  position: relative;
+  margin: 0px 30px;
 }
-.s-main .section-1 .sub-section-2 .form-style {
+.started-main .section-1 .sub-section-2 > *:nth-child(2) span {
+  background-color: white;
+  padding: 10px;
+}
+.started-main .section-1 .sub-section-2 > *:nth-child(2)::before {
+  position: absolute;
+  z-index: -1;
+  content: "";
+  width: 100%;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background-color: rgba(128, 128, 128, 0.5215686275);
+  top: calc(50% - 1px);
+}
+.started-main .section-1 .sub-section-2 .form-style {
   display: flex;
   flex-direction: column;
   gap: 20px;
   margin-top: 20px;
 }
-.s-main .section-1 .sub-section-2 .form-style > div {
+.started-main .section-1 .sub-section-2 .form-style > div {
   display: flex;
   gap: 10px;
 }
-.s-main .section-1 .sub-section-2 .form-style > div > input {
+.started-main .section-1 .sub-section-2 .form-style > div > input {
   outline: none;
   border: none;
   background-color: #f3f5f9;
@@ -80,11 +97,10 @@
   padding: 10px;
   border-radius: 20px;
 }
-.s-main .section-1 .sub-section-2 .form-style > div > input:focus {
+.started-main .section-1 .sub-section-2 .form-style > div > input:focus {
   outline: 3px solid rgba(141, 0, 248, 0.2117647059);
 }
-
-button.purple {
+.started-main button.purple {
   padding: 20px;
   border: 1px solid #8b00f8;
   font-size: 1.2rem;
@@ -94,12 +110,12 @@ button.purple {
   border-radius: 10px;
   transition: 0.1s ease-in;
 }
-button.purple:hover {
+.started-main button.purple:hover {
   background-color: #8b00f8;
   outline: 3px solid rgba(141, 0, 248, 0.2117647059);
   color: white;
 }
-button.purple button.blue {
+.started-main button.blue {
   padding: 20px;
   border: 1px solid dodgerblue;
   font-size: 1.2rem;
@@ -109,38 +125,38 @@ button.purple button.blue {
   border-radius: 10px;
   transition: 0.1s ease-in;
 }
-button.purple button.blue:hover {
+.started-main button.blue:hover {
   background-color: dodgerblue;
   outline: 3px solid rgba(30, 143, 255, 0.479);
   color: white;
 }
-button.purple .section-3 {
+.started-main .section-3 {
   margin: 40px 10px;
 }
-button.purple .section-3 h1 {
+.started-main .section-3 h1 {
   font-size: 3rem;
   color: #8b00f8;
   margin: 40px 20px;
 }
-button.purple .section-3 .accordion {
+.started-main .section-3 .accordion {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
 }
-button.purple .section-3 .accordion .accord {
+.started-main .section-3 .accordion .accord {
   width: calc(50% - 30px);
   border-radius: 10px;
 }
-button.purple .section-3 .accordion .accord :checked ~ label {
+.started-main .section-3 .accordion .accord :checked ~ label {
   border-radius: 10px 10px 0px 0px;
   background-color: rgba(141, 0, 248, 0.2117647059);
   color: #8b00f8;
   outline: 3px solid rgba(141, 0, 248, 0.3215686275);
 }
-button.purple .section-3 .accordion .accord :checked ~ label:after {
+.started-main .section-3 .accordion .accord :checked ~ label:after {
   transform: rotate(180deg) scale(2.5, 1);
 }
-button.purple .section-3 .accordion .accord label {
+.started-main .section-3 .accordion .accord label {
   padding: 20px;
   display: block;
   box-shadow: 1px 1px 2px rgba(128, 128, 128, 0.432);
@@ -148,7 +164,7 @@ button.purple .section-3 .accordion .accord label {
   cursor: pointer;
   position: relative;
 }
-button.purple .section-3 .accordion .accord label:after {
+.started-main .section-3 .accordion .accord label:after {
   font-weight: bold;
   position: absolute;
   height: -moz-min-content;
@@ -160,10 +176,10 @@ button.purple .section-3 .accordion .accord label:after {
   z-index: 2;
   right: 30px;
 }
-button.purple .section-3 .accordion .accord input {
+.started-main .section-3 .accordion .accord input {
   display: none;
 }
-button.purple .section-3 .accordion .accord .hide {
+.started-main .section-3 .accordion .accord .hide {
   padding: 20px;
   display: none;
   max-height: 0;
@@ -174,12 +190,12 @@ button.purple .section-3 .accordion .accord .hide {
   line-height: 1.5;
   color: rgb(49, 49, 49);
 }
-button.purple .section-3 .accordion .accord > input:checked ~ div {
+.started-main .section-3 .accordion .accord > input:checked ~ div {
   display: block;
   max-height: -moz-min-content;
   max-height: min-content;
 }
-button.purple .section-2 {
+.started-main .section-2 {
   margin: 50px 40px 20px;
 }
 

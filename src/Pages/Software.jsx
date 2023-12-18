@@ -31,7 +31,7 @@ const Software = () => {
   return (
     <div>
       <Header />
-      <div className="main">
+      <div className="software-main">
         <div className="sectionOne">
           <div className="sub-section-1">
             <h1>
@@ -54,7 +54,12 @@ const Software = () => {
 
             <div className="radio-btn">
               <div>
-                <input type="radio" name="checked" id="dashboard" />
+                <input
+                  type="radio"
+                  name="checked"
+                  id="dashboard"
+                  onClick={(e) => scrollFn(e.target.getAttribute("id"))}
+                />
                 <label
                   htmlFor="dashboard"
                   onClick={(e) => scrollFn(e.target.getAttribute("for"))}
@@ -63,7 +68,12 @@ const Software = () => {
                 </label>
               </div>
               <div>
-                <input type="radio" name="checked" id="order" />
+                <input
+                  type="radio"
+                  name="checked"
+                  id="order"
+                  onClick={(e) => scrollFn(e.target.getAttribute("id"))}
+                />
                 <label
                   htmlFor="order"
                   onClick={(e) => scrollFn(e.target.getAttribute("for"))}
@@ -72,7 +82,12 @@ const Software = () => {
                 </label>
               </div>
               <div>
-                <input type="radio" name="checked" id="inventory" />
+                <input
+                  type="radio"
+                  name="checked"
+                  id="inventory"
+                  onClick={(e) => scrollFn(e.target.getAttribute("id"))}
+                />
                 <label
                   htmlFor="inventory"
                   onClick={(e) => scrollFn(e.target.getAttribute("for"))}
@@ -81,7 +96,12 @@ const Software = () => {
                 </label>
               </div>
               <div>
-                <input type="radio" name="checked" id="inbound-shipment" />
+                <input
+                  type="radio"
+                  name="checked"
+                  id="inbound-shipment"
+                  onClick={(e) => scrollFn(e.target.getAttribute("id"))}
+                />
                 <label
                   htmlFor="inbound-shipment"
                   onClick={(e) => scrollFn(e.target.getAttribute("for"))}
@@ -90,7 +110,12 @@ const Software = () => {
                 </label>
               </div>
               <div>
-                <input type="radio" name="checked" id="fba-request" />
+                <input
+                  type="radio"
+                  name="checked"
+                  id="fba-request"
+                  onClick={(e) => scrollFn(e.target.getAttribute("id"))}
+                />
                 <label
                   htmlFor="fba-request"
                   onClick={(e) => scrollFn(e.target.getAttribute("for"))}
@@ -238,7 +263,31 @@ const Software = () => {
             />
           </div>
         </div>
-        <div className="sectionFour"></div>
+        <div className="sectionFour">
+          <div>
+            <div>
+              <div>INTEGRATIONS</div>
+              <h2>
+                LIBREX’s software allows for limitless multi-channel
+                integrations
+              </h2>
+              <p>
+                LIBREX’s software allows for limitless multi-channel
+                integrations that can be used seamlessly with your online store.
+                This is great for a lot of reasons and makes it so easy to use
+                Librex. That is why it is so helpful.
+              </p>
+            </div>
+            <div></div>
+          </div>
+          <div>
+            <div className="sub-section-1">
+              <div>
+                <img src="" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );

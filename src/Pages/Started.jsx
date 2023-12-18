@@ -180,76 +180,71 @@ What happens when I get an order?`,
   ];
 
   return (
-    <div>
+    <div className="started-main">
       <Header />
-      <div className="s-main">
-        <div className="section-1">
-          <div className="sub-section-1">
-            <div className="gray-text">WHAT'S INCLUDED</div>
-            <div className="items">
-              {data.map(({ source, children }, index) => {
-                return (
-                  <SubSectionItems key={index} source={source}>
-                    {children}
-                  </SubSectionItems>
-                );
-              })}
-            </div>
+      <div className="section-1">
+        <div className="sub-section-1">
+          <div className="gray-text">WHAT'S INCLUDED</div>
+          <div className="items">
+            {data.map(({ source, children }, index) => {
+              return (
+                <SubSectionItems key={index} source={source}>
+                  {children}
+                </SubSectionItems>
+              );
+            })}
           </div>
-          <div className="sub-section-2">
+        </div>
+        <div className="sub-section-2">
+          <div>
+            <div>Get Started Today</div>
             <div>
-              <div>Get Started Today</div>
-              <div>
-                Get connected with a dedicated customer support representative
-                to answer all of your questions and create your custom
-                fulfillment quote.
-              </div>
-              <button className="purple">Shedule a Free Phone Call Now</button>
+              Get connected with a dedicated customer support representative to
+              answer all of your questions and create your custom fulfillment
+              quote.
             </div>
-            <div>------------------ OR ------------------</div>
-            <form className="form-style">
-              <div className="row-1">
-                <img src="./media/customer-icon.svg" alt="" />
-                <input
-                  type="text"
-                  name="firstName"
-                  id="firstName"
-                  placeholder="First name"
-                />
-                <input
-                  type="text"
-                  name="lastName"
-                  id="lastName"
-                  placeholder="Last name"
-                />
-              </div>
-              <div className="row-2">
-                <img src="./media/email-icon.svg" alt="" />
-                <input
-                  type="text"
-                  name="email"
-                  id="email"
-                  placeholder="Email"
-                />
-              </div>
-              <div className="row-3">
-                <img src="./media/phone-icon.svg" alt="" />
-                <input
-                  type="text"
-                  name="countryCode"
-                  id="countryCode"
-                  placeholder="Country Code"
-                />
-                <input
-                  type="text"
-                  name="phoneNumber"
-                  id="phoneNumber"
-                  placeholder="Phone number"
-                />
-              </div>
-              <button className="blue">Connect with a representative</button>
-            </form>
+            <button className="purple">Shedule a Free Phone Call Now</button>
           </div>
+          <div>
+            <span>OR</span>
+          </div>
+          <form className="form-style">
+            <div className="row-1">
+              <img src="./media/customer-icon.svg" alt="" />
+              <input
+                type="text"
+                name="firstName"
+                id="firstName"
+                placeholder="First name"
+              />
+              <input
+                type="text"
+                name="lastName"
+                id="lastName"
+                placeholder="Last name"
+              />
+            </div>
+            <div className="row-2">
+              <img src="./media/email-icon.svg" alt="" />
+              <input type="text" name="email" id="email" placeholder="Email" />
+            </div>
+            <div className="row-3">
+              <img src="./media/phone-icon.svg" alt="" />
+              <input
+                type="text"
+                name="countryCode"
+                id="countryCode"
+                placeholder="Country Code"
+              />
+              <input
+                type="text"
+                name="phoneNumber"
+                id="phoneNumber"
+                placeholder="Phone number"
+              />
+            </div>
+            <button className="blue">Connect with a representative</button>
+          </form>
         </div>
       </div>
       <div className="section-2">
