@@ -94,6 +94,9 @@
           width: 100%;
           display: flex;
           padding: 10px;
+          justify-content: center;
+          align-items: center;
+
           h1 {
             margin: 20px 0px;
             color: #8b00f8;
@@ -133,6 +136,7 @@
           }
           img {
             width: 50%;
+            height: fit-content;
           }
         }
       }
@@ -181,6 +185,7 @@
         display: flex;
         flex-direction: column;
         color: gray;
+        padding: 50px;
         gap: 30px;
         h2 {
           color: #333333;
@@ -188,9 +193,48 @@
         }
       }
       & > *:last-child {
-        background-color: red;
         display: flex;
-        margin: 10px;
+        justify-content: center;
+        align-items: end;
+        .mainbox {
+          position: relative;
+          & > img:nth-child(2) {
+            position: absolute;
+            left: 25%;
+            bottom: 10px;
+            z-index: -3;
+            animation: ebay 4s infinite;
+          }
+          & > img:nth-child(3) {
+            position: absolute;
+            right: 25%;
+            bottom: 10px;
+            z-index: -3;
+            animation: walmart 4s infinite;
+          }
+          & > img:nth-child(4) {
+            position: absolute;
+            right: 25%;
+            bottom: 10px;
+            z-index: -3;
+            animation: amazon 4s infinite;
+          }
+          & > img:nth-child(5) {
+            position: absolute;
+            left: 25%;
+            bottom: 10px;
+            z-index: -3;
+            animation: woocom 4s infinite;
+          }
+          & > img:last-child {
+            position: absolute;
+            left: 0px;
+            width: 100%;
+            animation: box 4s infinite;
+            top: 0px;
+            z-index: 3;
+          }
+        }
       }
     }
     .sub-section-2 {
@@ -198,6 +242,9 @@
       display: flex;
       flex-direction: column;
       gap: 50px;
+      & > div:not(:last-child) {
+        gap: 50px 20px;
+      }
       input[type^="checkbox"]:checked ~ .show-menu {
         display: flex !important;
       }
@@ -206,7 +253,7 @@
       }
       input[type^="checkbox"]:checked ~ :last-child {
         ::after {
-          content: "Less Integration ▶";
+          content: " Less Integration ";
         }
       }
       & > .show-menu {
@@ -230,29 +277,112 @@
           img {
             width: 70px;
           }
-
-          // &:nth-child(2) {
-          //   img {
-          //   }
-          // }
-          // &:last-child {
-          //   img {
-          //     width: 100%;
-          //   }
-          // }
         }
       }
       & > *:last-child {
         text-align: right;
         label {
-          color: gray;
+          color: #8b00f8;
+          font-size: 1.3rem;
+          font-weight: bold;
+          cursor: pointer;
           position: relative;
           &::after {
-            content: "More Integration";
+            content: " More Integration";
           }
         }
       }
     }
+  }
+}
+
+@keyframes ebay {
+  0% {
+    bottom: 10px;
+    left: 25%;
+  }
+  30% {
+    bottom: 250px;
+    left: -50px;
+  }
+  60% {
+    bottom: 250px;
+    left: -50px;
+  }
+  80% {
+    bottom: 10px;
+    left: 25%;
+  }
+}
+@keyframes walmart {
+  0% {
+    bottom: 10px;
+    right: 25%;
+  }
+  30% {
+    bottom: 250px;
+    right: -50px;
+  }
+  60% {
+    bottom: 250px;
+    right: -50px;
+  }
+  80% {
+    bottom: 10px;
+    right: 25%;
+  }
+}
+@keyframes woocom {
+  0% {
+    bottom: 10px;
+    left: 50%;
+  }
+  30% {
+    bottom: 220px;
+    left: 30px;
+  }
+  60% {
+    bottom: 220px;
+    left: 30px;
+  }
+  80% {
+    bottom: 10px;
+    left: 50%;
+  }
+}
+@keyframes amazon {
+  0% {
+    bottom: 10px;
+    right: 50%;
+  }
+  30% {
+    bottom: 220px;
+    right: 30px;
+  }
+  60% {
+    bottom: 220px;
+    right: 30px;
+  }
+  80% {
+    bottom: 10px;
+    right: 50%;
+  }
+}
+@keyframes box {
+  0% {
+    top: -0px;
+  }
+  30% {
+    top: -220px;
+  }
+  60% {
+    top: -220px;
+  }
+  80% {
+    top: -0px;
+  }
+  100% {
+    top: -0px;
   }
 }
 
@@ -286,6 +416,27 @@
       grid-template-columns: repeat(2, 1fr) !important;
     }
   }
+  .sectionFour {
+    & > *:first-child {
+      width: 100% !important;
+      flex-direction: column !important;
+      & > *:first-child {
+        width: calc(100% - 80px);
+      }
+      & > *:last-child {
+        width: 100%;
+        margin-top: 270px;
+      }
+    }
+    .sub-section-2 {
+      & > div:not(:last-child) {
+        flex-wrap: wrap !important;
+        & > * {
+          width: 30% !important;
+        }
+      }
+    }
+  }
 }
 @media (max-width: 540px) {
   .sectionThree {
@@ -294,13 +445,32 @@
     }
   }
   .sectionTwo > .sub-section-2 .data {
-    background-color: red;
     flex-direction: column;
     gap: 50px;
     & > *:last-child {
       margin-left: auto;
       margin-right: auto;
       width: 80% !important;
+    }
+  }
+  .sectionFour {
+    padding: 0px !important;
+    .sub-section-1 {
+      h2 {
+        font-size: 2rem !important;
+      }
+      & > *:last-child {
+        transform: scale(0.8);
+        margin-top: 150px;
+      }
+    }
+    .sub-section-2 {
+      & > div:not(:last-child) {
+        flex-wrap: wrap !important;
+        & > * {
+          width: 100% !important;
+        }
+      }
     }
   }
 }

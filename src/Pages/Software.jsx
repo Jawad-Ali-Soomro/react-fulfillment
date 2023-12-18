@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "../Components/Desktop";
 import "../Styles/Software.css";
+import { useEffect } from "react";
 const Software = () => {
   const scrollFn = (name) => {
     switch (name) {
@@ -40,8 +41,8 @@ const Software = () => {
             <span>Your eCommerce store all in one place</span>
           </div>
           <div className="sub-section-2">
-            <img src="./main/softwareDesktop.svg" alt="desktop" />
-            <img src="./main/softwareMobile.svg" alt="mobile" />
+            <img src="./softwareDesktop.svg" alt="desktop" />
+            <img src="./softwareMobile.svg" alt="mobile" />
             <span>
               Never miss a beat with LIBREX. Manage your eCommerce store from
               anywhere on any computer, phone or tablet.
@@ -141,71 +142,81 @@ const Software = () => {
                     <li>Sales trends</li>
                   </ul>
                 </div>
-                <img src="./main/dashboard.png" alt="png" />
+                <img src="./dashboard.png" alt="png" />
               </div>
               <div className="data">
                 <div>
                   <h1>Order</h1>
                   <div className="content">
-                    Get a full overview of your eCommerce business in seconds.
-                    Preview all of your important store data all in one place.
+                    Our support team works around the clock to ensure that all
+                    of your orders are being processed in real time. Our Librex
+                    Go Dashboard supports seamless integrations with unlimited
+                    selling channels.
                   </div>
                   <div className="title">FEATURES</div>
                   <ul>
-                    <li>Full account overview</li>
-                    <li>Inventory status alerts</li>
-                    <li>Sales trends</li>
+                    <li>Same-day Order Processing</li>
+                    <li>Real-time Order Reporting</li>
+                    <li>Error-free Turn Around</li>
                   </ul>
                 </div>
-                <img src="./main/dashboard.png" alt="png" />
+                <img src="./orders.png" alt="png" />
               </div>
               <div className="data">
                 <div>
                   <h1>Inventory</h1>
                   <div className="content">
-                    Get a full overview of your eCommerce business in seconds.
-                    Preview all of your important store data all in one place.
+                    Managing inventory can become really frustrating especially
+                    when you have multiple selling channels. Our in-house
+                    software takes all the stress off of having to keep track of
+                    your inventory.
                   </div>
                   <div className="title">FEATURES</div>
                   <ul>
-                    <li>Full account overview</li>
-                    <li>Inventory status alerts</li>
-                    <li>Sales trends</li>
+                    <li>Live Inventory Updates</li>
+                    <li>Manage and Transfer Inventory</li>
+                    <li>Inventory Lifecycle (Coming soon)</li>
                   </ul>
                 </div>
-                <img src="./main/dashboard.png" alt="png" />
+                <img src="./inventory.png" alt="png" />
               </div>
               <div className="data">
                 <div>
                   <h1>Inbound Shipment</h1>
                   <div className="content">
-                    Get a full overview of your eCommerce business in seconds.
-                    Preview all of your important store data all in one place.
+                    Send us containers, pallets or individual cartons, and our
+                    team will turn around all inbound shipments in less than 8
+                    hours so you can simply start shipping your products the day
+                    they arrive.
                   </div>
                   <div className="title">FEATURES</div>
                   <ul>
-                    <li>Full account overview</li>
-                    <li>Inventory status alerts</li>
-                    <li>Sales trends</li>
+                    <li>Same Day Receiving</li>
+                    <li>
+                      Retail Storage Network keeps your inventory closest to
+                      your customers
+                    </li>
                   </ul>
                 </div>
-                <img src="./main/dashboard.png" alt="png" />
+                <img src="./inbound.png" alt="png" />
               </div>
               <div className="data">
                 <div>
                   <h1>FBA Request</h1>
                   <div className="content">
-                    Get a full overview of your eCommerce business in seconds.
-                    Preview all of your important store data all in one place.
+                    Keeping up with inventory restrictions from Amazon can be
+                    tedious. Whether it’s an FBA prep or replenishment request,
+                    we will take care of it within 1 business day. Simply upload
+                    your labels to our software and we will take it from there.
                   </div>
                   <div className="title">FEATURES</div>
                   <ul>
-                    <li>Full account overview</li>
-                    <li>Inventory status alerts</li>
-                    <li>Sales trends</li>
+                    <li>Same Day Forwarding</li>
+                    <li>FBA Prep 2 Day Turnaround</li>
+                    <li> Custom Work Orders for Bundles and more</li>
                   </ul>
                 </div>
-                <img src="./main/dashboard.png" alt="png" />
+                <img src="./fba.png" alt="png" />
               </div>
             </div>
           </div>
@@ -214,51 +225,51 @@ const Software = () => {
           <h1>Software Feature</h1>
           <div className="main-container">
             <IconComponent
-              location={"./main/support.svg"}
+              location={"./support.svg"}
               content={`24/7 U.S. Based Customer Support`}
             />
             <IconComponent
-              location={"./main/integrations.svg"}
+              location={"./integrations.svg"}
               content={`Unlimited Selling Integrations`}
             />
             <IconComponent
-              location={"./main/dataImporting.svg"}
+              location={"./dataImporting.svg"}
               content={`Data Importing`}
             />
             <IconComponent
-              location={"./main/realtimeUpdates.svg"}
+              location={"./realtimeUpdates.svg"}
               content={`Real-time Updates`}
             />
             <IconComponent
-              location={"./main/return.svg"}
+              location={"./return.svg"}
               content={`Return Management`}
             />
             <IconComponent
-              location={"./main/analysis.svg"}
+              location={"./analysis.svg"}
               content={`Reporting & Analytics`}
             />
             <IconComponent
-              location={"./main/softwareSuite.svg"}
+              location={"./softwareSuite.svg"}
               content={`On Website Software Suite`}
             />
             <IconComponent
-              location={"./main/inventoryManagement.svg"}
+              location={"./inventoryManagement2.svg"}
               content={`Inventory Management`}
             />
             <IconComponent
-              location={"./main/orderTracking.svg"}
+              location={"./orderTracking.svg"}
               content={`Order Tracking`}
             />
             <IconComponent
-              location={"./main/cloudBased.svg"}
+              location={"./cloudBased.svg"}
               content={`Cloud Based Platform`}
             />
             <IconComponent
-              location={"./main/orderProcessing.svg"}
+              location={"./orderProcessing.svg"}
               content={`Automated Order Processing`}
             />
             <IconComponent
-              location={"./main/brandedPackaging.svg"}
+              location={"./brandedPackaging.svg"}
               content={`Branded Packaging Slips & Labels`}
             />
           </div>
@@ -279,11 +290,18 @@ const Software = () => {
               </p>
             </div>
             <div>
-              <div className="mainbox"></div>
+              <div className="mainbox">
+                <img src="./boxBottom.svg" alt="boxBottom.svg" />
+                <img src="./ebay.webp" alt="ebay" />
+                <img src="./walmart.webp" alt="ebay" />
+                <img src="./amazon.webp" alt="ebay" />
+                <img src="./woocom.svg" alt="ebay" />
+                <img src="./boxTop.svg" alt="topBox" />
+              </div>
             </div>
           </div>
           <div className="sub-section-2">
-            <div>
+            <div className="menu">
               <div>
                 <div>
                   <img src="./ebay.webp" alt="ebay" />
@@ -325,77 +343,77 @@ const Software = () => {
             <div className="show-menu">
               <div>
                 <div>
-                  <img src="./ebay.webp" alt="ebay" />
+                  <img src="./google.svg" alt="google" />
                 </div>
-                <span>Ebay</span>
+                <span>Google</span>
               </div>
               <div>
                 <div>
-                  <img src="./amazon.webp" alt="ebay" />
+                  <img src="./bigcommerce.svg" alt="bigcommerce" />
                 </div>
-                <span>Amazon Marketplace</span>
+                <span>BigCommerce</span>
               </div>
               <div>
                 <div>
-                  <img src="./shopify.webp" alt="shopify" />
+                  <img src="./squarespace.webp" alt="squarespace" />
                 </div>
-                <span>Shopify</span>
+                <span>SquareSpace</span>
               </div>
               <div>
                 <div>
-                  <img src="./walmart.webp" alt="walmart" />
+                  <img src="./wix.webp" alt="wix" />
                 </div>
-                <span>walmart</span>
+                <span>Wix</span>
               </div>
               <div>
                 <div>
-                  <img src="./woocom.svg" alt="wooCommerce" />
+                  <img src="./wish.svg" alt="wish" />
                 </div>
-                <span>WooCommerce</span>
+                <span>Wish</span>
               </div>
               <div>
                 <div>
-                  <img src="./etsy.svg" alt="etsy" />
+                  <img src="./weebly.svg" alt="weebly" />
                 </div>
-                <span>etsy</span>
+                <span>Weebly</span>
               </div>
             </div>
             <div className="show-menu">
               <div>
                 <div>
-                  <img src="./ebay.webp" alt="ebay" />
+                  <img src="./magento.svg" alt="maganto" />
                 </div>
-                <span>Ebay</span>
+                <span>Magento</span>
               </div>
               <div>
                 <div>
-                  <img src="./amazon.webp" alt="ebay" />
+                  <img src="./stitchLabs.png" alt="stitchLabs" />
                 </div>
-                <span>Amazon Marketplace</span>
+                <span>StitchLabs</span>
               </div>
               <div>
                 <div>
-                  <img src="./shopify.webp" alt="shopify" />
+                  <img src="./ecwid.svg" alt="ecwid" />
                 </div>
-                <span>Shopify</span>
+                <span>Ecwid</span>
               </div>
               <div>
                 <div>
-                  <img src="./walmart.webp" alt="walmart" />
+                  <img src="./sellbrite.png" alt="sellbrite" />
                 </div>
-                <span>walmart</span>
+                <span>Sellbrite</span>
               </div>
               <div>
                 <div>
-                  <img src="./woocom.svg" alt="wooCommerce" />
+                  <img src="./3dCart.svg" alt="3dCart" />
                 </div>
-                <span>WooCommerce</span>
+                <span>3dCart</span>
               </div>
               <div>
                 <div>
-                  <img src="./etsy.svg" alt="etsy" />
+                  <img src="./openCart.svg" alt="openCart" />
                 </div>
-                <span>etsy</span>
+                <span>OpenCart</span>
               </div>
             </div>
             <div>

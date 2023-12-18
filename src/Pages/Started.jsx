@@ -18,7 +18,7 @@ const Accord = ({ id, label, content }) => (
 const Started = () => {
   let data = [
     {
-      source: `./media/discountedShipment.svg`,
+      source: `./discountedShipment.svg`,
       children: (
         <div>
           Discounted <span className="blue">2-day </span> shipping
@@ -26,7 +26,7 @@ const Started = () => {
       ),
     },
     {
-      source: `./media/noPickBackFee.svg`,
+      source: `./noPickBackFee.svg`,
       children: (
         <div>
           <span className="blue">No</span> pick pack fees or extra charges{" "}
@@ -34,7 +34,7 @@ const Started = () => {
       ),
     },
     {
-      source: `./media/deductive.svg`,
+      source: `./deductive.svg`,
       children: (
         <div>
           <span className="blue">Dedicated</span> customer support specialist{" "}
@@ -42,7 +42,7 @@ const Started = () => {
       ),
     },
     {
-      source: `./media/unlimitedIntigration.svg`,
+      source: `./unlimitedIntigration.svg`,
       children: (
         <div>
           <span className="blue">Unlimited</span> selling channel integrations
@@ -50,11 +50,11 @@ const Started = () => {
       ),
     },
     {
-      source: `./media/specialProject.svg`,
+      source: `./specialProject.svg`,
       children: <div>Special projects to take care of any inventory needs</div>,
     },
     {
-      source: `./media/ritalFulfilment.svg`,
+      source: `./ritalFulfilment.svg`,
       children: (
         <div>
           Retail Fulfillment <span className="blue">network</span> capabilities
@@ -62,7 +62,7 @@ const Started = () => {
       ),
     },
     {
-      source: `./media/noMinimumOrder.svg`,
+      source: `./noMinimumOrder.svg`,
       children: (
         <div>
           <span className="blue">No </span> minimum order quantities
@@ -70,7 +70,7 @@ const Started = () => {
       ),
     },
     {
-      source: `./media/customer-packing.svg`,
+      source: `./customer-packing.svg`,
       children: (
         <div>
           <span className="blue">Customer </span>packing options
@@ -78,7 +78,7 @@ const Started = () => {
       ),
     },
     {
-      source: `./media/flexibleOption.svg`,
+      source: `./flexibleOption.svg`,
       children: (
         <div>
           Flexible options for
@@ -87,7 +87,7 @@ const Started = () => {
       ),
     },
     {
-      source: `./media/inventoryManagement.svg`,
+      source: `./inventoryManagement.svg`,
       children: (
         <div>
           <span className="blue">Free </span> Free inventory management software

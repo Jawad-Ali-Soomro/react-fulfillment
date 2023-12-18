@@ -1,4 +1,3 @@
-@charset "UTF-8";
 .software-main {
   overflow: hidden;
   max-width: 1680px;
@@ -93,6 +92,8 @@
   width: 100%;
   display: flex;
   padding: 10px;
+  justify-content: center;
+  align-items: center;
 }
 .software-main .sectionTwo .sub-section-2 .slide .data h1 {
   margin: 20px 0px;
@@ -132,6 +133,8 @@
 }
 .software-main .sectionTwo .sub-section-2 .slide .data img {
   width: 50%;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 .software-main .sectionThree {
   overflow: hidden;
@@ -174,6 +177,7 @@
   display: flex;
   flex-direction: column;
   color: gray;
+  padding: 50px;
   gap: 30px;
 }
 .software-main .sectionFour .sub-section-1 > *:first-child h2 {
@@ -181,15 +185,57 @@
   font-size: 3rem;
 }
 .software-main .sectionFour .sub-section-1 > *:last-child {
-  background-color: red;
   display: flex;
-  margin: 10px;
+  justify-content: center;
+  align-items: end;
+}
+.software-main .sectionFour .sub-section-1 > *:last-child .mainbox {
+  position: relative;
+}
+.software-main .sectionFour .sub-section-1 > *:last-child .mainbox > img:nth-child(2) {
+  position: absolute;
+  left: 25%;
+  bottom: 10px;
+  z-index: -3;
+  animation: ebay 4s infinite;
+}
+.software-main .sectionFour .sub-section-1 > *:last-child .mainbox > img:nth-child(3) {
+  position: absolute;
+  right: 25%;
+  bottom: 10px;
+  z-index: -3;
+  animation: walmart 4s infinite;
+}
+.software-main .sectionFour .sub-section-1 > *:last-child .mainbox > img:nth-child(4) {
+  position: absolute;
+  right: 25%;
+  bottom: 10px;
+  z-index: -3;
+  animation: amazon 4s infinite;
+}
+.software-main .sectionFour .sub-section-1 > *:last-child .mainbox > img:nth-child(5) {
+  position: absolute;
+  left: 25%;
+  bottom: 10px;
+  z-index: -3;
+  animation: woocom 4s infinite;
+}
+.software-main .sectionFour .sub-section-1 > *:last-child .mainbox > img:last-child {
+  position: absolute;
+  left: 0px;
+  width: 100%;
+  animation: box 4s infinite;
+  top: 0px;
+  z-index: 3;
 }
 .software-main .sectionFour .sub-section-2 {
   padding: 100px 20px;
   display: flex;
   flex-direction: column;
   gap: 50px;
+}
+.software-main .sectionFour .sub-section-2 > div:not(:last-child) {
+  gap: 50px 20px;
 }
 .software-main .sectionFour .sub-section-2 input[type^=checkbox]:checked ~ .show-menu {
   display: flex !important;
@@ -198,7 +244,7 @@
   display: none;
 }
 .software-main .sectionFour .sub-section-2 input[type^=checkbox]:checked ~ :last-child ::after {
-  content: "Less Integration ▶";
+  content: " Less Integration ";
 }
 .software-main .sectionFour .sub-section-2 > .show-menu {
   overflow: hidden;
@@ -226,13 +272,105 @@
   text-align: right;
 }
 .software-main .sectionFour .sub-section-2 > *:last-child label {
-  color: gray;
+  color: #8b00f8;
+  font-size: 1.3rem;
+  font-weight: bold;
+  cursor: pointer;
   position: relative;
 }
 .software-main .sectionFour .sub-section-2 > *:last-child label::after {
-  content: "More Integration";
+  content: " More Integration";
 }
 
+@keyframes ebay {
+  0% {
+    bottom: 10px;
+    left: 25%;
+  }
+  30% {
+    bottom: 250px;
+    left: -50px;
+  }
+  60% {
+    bottom: 250px;
+    left: -50px;
+  }
+  80% {
+    bottom: 10px;
+    left: 25%;
+  }
+}
+@keyframes walmart {
+  0% {
+    bottom: 10px;
+    right: 25%;
+  }
+  30% {
+    bottom: 250px;
+    right: -50px;
+  }
+  60% {
+    bottom: 250px;
+    right: -50px;
+  }
+  80% {
+    bottom: 10px;
+    right: 25%;
+  }
+}
+@keyframes woocom {
+  0% {
+    bottom: 10px;
+    left: 50%;
+  }
+  30% {
+    bottom: 220px;
+    left: 30px;
+  }
+  60% {
+    bottom: 220px;
+    left: 30px;
+  }
+  80% {
+    bottom: 10px;
+    left: 50%;
+  }
+}
+@keyframes amazon {
+  0% {
+    bottom: 10px;
+    right: 50%;
+  }
+  30% {
+    bottom: 220px;
+    right: 30px;
+  }
+  60% {
+    bottom: 220px;
+    right: 30px;
+  }
+  80% {
+    bottom: 10px;
+    right: 50%;
+  }
+}
+@keyframes box {
+  0% {
+    top: 0px;
+  }
+  30% {
+    top: -220px;
+  }
+  60% {
+    top: -220px;
+  }
+  80% {
+    top: 0px;
+  }
+  100% {
+    top: 0px;
+  }
+}
 @media (max-width: 960px) {
   .sectionOne .sub-section-1 {
     width: 100%;
@@ -259,13 +397,29 @@
   .sectionThree .main-container {
     grid-template-columns: repeat(2, 1fr) !important;
   }
+  .sectionFour > *:first-child {
+    width: 100% !important;
+    flex-direction: column !important;
+  }
+  .sectionFour > *:first-child > *:first-child {
+    width: calc(100% - 80px);
+  }
+  .sectionFour > *:first-child > *:last-child {
+    width: 100%;
+    margin-top: 270px;
+  }
+  .sectionFour .sub-section-2 > div:not(:last-child) {
+    flex-wrap: wrap !important;
+  }
+  .sectionFour .sub-section-2 > div:not(:last-child) > * {
+    width: 30% !important;
+  }
 }
 @media (max-width: 540px) {
   .sectionThree .main-container {
     grid-template-columns: 1fr !important;
   }
   .sectionTwo > .sub-section-2 .data {
-    background-color: red;
     flex-direction: column;
     gap: 50px;
   }
@@ -273,5 +427,21 @@
     margin-left: auto;
     margin-right: auto;
     width: 80% !important;
+  }
+  .sectionFour {
+    padding: 0px !important;
+  }
+  .sectionFour .sub-section-1 h2 {
+    font-size: 2rem !important;
+  }
+  .sectionFour .sub-section-1 > *:last-child {
+    transform: scale(0.8);
+    margin-top: 150px;
+  }
+  .sectionFour .sub-section-2 > div:not(:last-child) {
+    flex-wrap: wrap !important;
+  }
+  .sectionFour .sub-section-2 > div:not(:last-child) > * {
+    width: 100% !important;
   }
 }/*# sourceMappingURL=Software.css.map */

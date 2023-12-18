@@ -2,10 +2,18 @@ import React from "react";
 import Header from "../Components/Desktop";
 import "../Styles/About.css";
 import { Link } from "react-router-dom";
+import { useEffect } from "react";
+import { useState } from "react";
 
 const About = () => {
+  let [isMobileView, setIsMobileView] = useState(window.innerWidth < 950);
+  useEffect(() => {
+    window.addEventListener("resize", () => {
+      setIsMobileView(window.innerWidth < 950);
+    });
+  }, []);
   return (
-    <div className="bg-black">
+    <div className="s-main">
       <Header />
       <div className="about-main">
         <div className="section-1">
@@ -19,28 +27,28 @@ const About = () => {
           </div>
           <div className="sub-section-2">
             <div className="icon">
-              <img src="./main/customer.svg" alt="svg" />
+              <img src="./customer.svg" alt="svg" />
               <div className="icon-content">
                 <h1>800+</h1>
                 <p>Customers</p>
               </div>
             </div>
             <div className="icon">
-              <img src="./main/transaction.svg" alt="svg" />
+              <img src="./transaction.svg" alt="svg" />
               <div className="icon-content">
                 <h1>$180M+</h1>
                 <p>Value Shipped 2020</p>
               </div>
             </div>
             <div className="icon">
-              <img src="./main/sale-increase.svg" alt="svg" />
+              <img src="./sale-increase.svg" alt="svg" />
               <div className="icon-content">
                 <h1>32%</h1>
                 <p>Average Customer YOY Growth</p>
               </div>
             </div>
             <div className="icon">
-              <img src="./main/2hrs.svg" alt="svg" />
+              <img src="./2hrs.svg" alt="svg" />
               <div className="icon-content">
                 <h1>2.5hr</h1>
                 <p>Response Time</p>
@@ -67,28 +75,35 @@ const About = () => {
         <div className="section-3">
           <div className="sub-section-1">
             <div className="time-stemp">
-              <img src="./main/living-groom.svg" alt="living-groom.svg" />
+              <img src="./living-groom.svg" alt="living-groom.svg" />
               <div>
                 <h2>2016</h2>
                 <p>Packing items on the livingroom floor</p>
-                <img src="./main/line-1.svg" alt="line-1.svg" />
+                <img
+                  className="f-line"
+                  src={isMobileView ? "/sm-line.svg" : "/line-1.svg"}
+                  alt="line-1.svg"
+                />
               </div>
             </div>
             <div className="time-stemp">
-              <img src="./main/inc.svg" alt="inc.svg" />
+              <img src="./inc.svg" alt="inc.svg" />
               <div>
                 <h2>2016</h2>
                 <p>Packing items on the livingroom floor</p>
               </div>
             </div>
             <div className="time-stemp">
-              <img src="./main/line-2.svg" alt="line-5.svg" />
+              <img
+                src={isMobileView ? "/sm-line.svg" : "/line-2.svg"}
+                alt="line-5.svg"
+              />
             </div>
           </div>
           <div className="sub-section-2">
             <div className="time-stemp">
               <img
-                src="./main/mult-small-warehouses.svg"
+                src="/mult-small-warehouses.svg"
                 alt="mult-small-warehouses.svg"
               />
               <div>
@@ -97,10 +112,13 @@ const About = () => {
               </div>
             </div>
             <div className="time-stemp">
-              <img src="./main/line-3.svg" alt="line-3.svg" />
+              <img
+                src={isMobileView ? "/sm-line.svg" : "/line-3.svg"}
+                alt="line-3.svg"
+              />
             </div>
             <div className="time-stemp">
-              <img src="./main/small-warehouse.svg" alt="inc.svg" />
+              <img src="./small-warehouse.svg" alt="inc.svg" />
               <div>
                 <h2>Mid 2017 </h2>
                 <p>Started using a small warehouse in Fredrick, Maryland</p>
@@ -109,17 +127,23 @@ const About = () => {
           </div>
           <div className="sub-section-3">
             <div className="time-stemp">
-              <img src="./main/line-4.svg" alt="line-4.svg" />
+              <img
+                src={isMobileView ? "/sm-line.svg" : "/line-4.svg"}
+                alt="line-4.svg"
+              />
             </div>
             <div className="time-stemp">
-              <img src="./main/small-warehouse.svg" alt="inc.svg" />
+              <img src="./small-warehouse.svg" alt="inc.svg" />
               <div>
                 <h2>Late 2018 </h2>
                 <p> Launched our portal software services</p>
               </div>
             </div>
             <div className="time-stemp">
-              <img src="./main/line-5.svg" alt="line-5.svg" />
+              <img
+                src={isMobileView ? "/sm-line.svg" : "/line-5.svg"}
+                alt="line-5.svg"
+              />
             </div>
           </div>
           <div className="sub-section-4">
@@ -165,43 +189,17 @@ const About = () => {
               </div>
             </div>
             <div className="time-stemp">
-              <img src="./main/big-warehouse.svg" alt="big-warehouse.svg" />
+              <img src="./big-warehouse.svg" alt="big-warehouse.svg" />
               <div>
                 <h2>Mid 2017 </h2>
                 <p>Started using a small warehouse in Fredrick, Maryland</p>
               </div>
             </div>
           </div>
-          {/* <div className="sub-section-2">
-            <div className="time-stemp">
-              <img src="./main/inc.svg" alt="inc.svg" />
-              <div>
-                <h2>2016</h2>
-                <p>Packing items on the livingroom floor</p>
-                <img src="./main/line-2.svg" alt="line-2.svg" />
-              </div>
-            </div>
-            <div className="time-stemp">
-              <img src="./main/inc.svg" alt="inc.svg" />
-              <div>
-                <h2>2016</h2>
-                <p>Packing items on the livingroom floor</p>
-                <img src="./main/line-2.svg" alt="line-2.svg" />
-              </div>
-            </div>
-            <div className="time-stemp">
-              <img src="./main/inc.svg" alt="inc.svg" />
-              <div>
-                <h2>2016</h2>
-                <p>Packing items on the livingroom floor</p>
-                <img src="./main/line-2.svg" alt="line-2.svg" />
-              </div>
-            </div>
-          </div> */}
         </div>
         <div className="section-4">
           <h3>OUR LOCATIONS</h3>
-          <img src="./main/location-map.svg" alt="location-map.svg" />
+          <img src="./location-map.svg" alt="location-map.svg" />
         </div>
         <div className="section-5">
           <div>
