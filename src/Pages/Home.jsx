@@ -33,7 +33,7 @@ const Home = () => {
             GO FOR IT <i className="uil uil-angle-right"></i>
           </a>
         </div>
-        <div className="bottom-content">
+        {/* <div className="bottom-content">
           <p>
             We had made it <span>simple</span>, and we take care of the tough
             parts for you with:
@@ -46,7 +46,7 @@ const Home = () => {
               <h1>Flate Rate Shipping</h1>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
       <div className="work-flow">
         <div className="content">
@@ -66,7 +66,7 @@ const Home = () => {
       <div className="steps">
         <div className="step">
           <div className="top-sect">
-            <img src="./send.png" alt=""  style={{width:'200px' , height:'150px'}}/>
+            <img src="./box.png" alt=""  style={{width:'200px' , height:'150px'}}/>
           </div>
           <section className="main-step">
             <h1>1</h1>
@@ -75,7 +75,7 @@ const Home = () => {
         </div>
         <div className="step">
           <div className="top-sect">
-            <img src="./store.png" alt="" style={{width:'200px' , height:'150px'}} />
+            <img src="./supply.png" alt="" style={{width:'200px' , height:'150px'}} />
           </div>
           <section className="main-step">
             <h1>2</h1>
@@ -84,7 +84,7 @@ const Home = () => {
         </div>
         <div className="step not">
           <div className="top-sect">
-            <img src="./ship.png" alt="" style={{width:'200px' , height:'150px'}}  />
+            <img src="./delivery-box.png" alt="" style={{width:'200px' , height:'150px'}}  />
           </div>
           <section className="main-step">
             <h1>3</h1>
@@ -338,19 +338,19 @@ const Home = () => {
         <section>
           <div className="main-image">
             <a href="">
-              <img src="./chat.svg" alt="" />
+              <img src="./chat.png" alt="" />
               <h1>Live Chat</h1>
             </a>
           </div>
           <div className="main-image">
             <a href="">
-              <img src="./notes.svg" alt="" />
+              <img src="./route.png" alt="" />
               <h1>Get Started</h1>
             </a>
           </div>
           <div className="main-image">
             <a href="">
-              <img src="./phone.svg" alt="" />
+              <img src="./schedule.png" alt="" />
               <h1>Make A Call</h1>
             </a>
           </div>

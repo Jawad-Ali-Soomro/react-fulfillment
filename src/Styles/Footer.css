@@ -13,8 +13,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    gap: 10px;
+    gap: 20px;
 }
 
 .copyright p{
@@ -23,4 +22,16 @@
 
 .copyright p span{
     font-weight: 300;
+}
+
+.copyright h3{
+    font-weight: 300;
+}
+
+.copyright p {
+    font-weight: 300;
+}
+
+.copyright i{
+    padding-right: 20px;
 }

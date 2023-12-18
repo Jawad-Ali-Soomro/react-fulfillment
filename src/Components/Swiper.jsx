@@ -23,10 +23,10 @@ export default function Slider() {
         className="mySwiper"
       >
         <SwiperSlide>
-          <div className="right-main" style={{ flexDirection: "column" }}>
-            <section className="content" style={{justifyContent:'start' , alignItems:'start'}}>
+          <div className="right-swiper" style={{ flexDirection: "column" }}>
+            <section className="content">
               <h1 style={{fontSize:'2.5rem'}}>Dashboard</h1>
-              <p style={{ maxWidth: "80%", marginLeft: "10%" }}>
+              <p>
                 Get a full overview of your eCommerce business in seconds.
                 Preview all of your important store data all in one place.
               </p>
@@ -58,10 +58,10 @@ export default function Slider() {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="right-main" style={{ flexDirection: "column" }}>
+          <div className="right-swiper" style={{ flexDirection: "column" }}>
             <section className="content">
               <h1 style={{fontSize:'2.5rem'}}>Orders</h1>
-              <p style={{ maxWidth: "80%", marginLeft: "10%" }}>
+              <p>
                 Our support team works around the clock to ensure that all of
                 your orders are being processed in real time. Our Eastern
                 Fulfillment Go Dashboard supports seamless integrations with
@@ -85,20 +85,15 @@ export default function Slider() {
               <img
                 src="./orders.png"
                 alt=""
-                style={{
-                  maxWidth: "80%",
-                  marginLeft: "10%",
-                  maxHeight: "320px",
-                }}
               />
             </section>
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="right-main" style={{ flexDirection: "column" }}>
+          <div className="right-swiper" style={{ flexDirection: "column" }}>
             <section className="content">
               <h1 style={{fontSize:'2.5rem'}}>Inventory</h1>
-              <p style={{ maxWidth: "80%", marginLeft: "10%" }}>
+              <p>
                 Managing inventory can become really frustrating especially when
                 you have multiple selling channels. Our in-house software takes
                 all the stress off of having to keep track of your inventory.
@@ -131,10 +126,10 @@ export default function Slider() {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="right-main" style={{ flexDirection: "column" }}>
+          <div className="right-swiper" style={{ flexDirection: "column" }}>
             <section className="content">
               <h1 style={{fontSize:'2.5rem'}}>Inbound Shipments</h1>
-              <p style={{ maxWidth: "80%", marginLeft: "10%" }}>
+              <p>
                 Send us containers, pallets or individual cartons, and our team
                 will turn around all inbound shipments in less than 8 hours so
                 you can simply start shipping your products the day they arrive.
@@ -163,10 +158,10 @@ export default function Slider() {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="right-main" style={{ flexDirection: "column" }}>
+          <div className="right-swiper" style={{ flexDirection: "column" }}>
             <section className="content">
               <h1 style={{fontSize:'2.5rem'}}>FBA Requests</h1>
-              <p style={{ maxWidth: "80%", marginLeft: "10%" }}>
+              <p>
                 Keeping up with inventory restrictions from Amazon can be
                 tedious. Whether it’s an FBA prep or replenishment request, we
                 will take care of it within 1 business day. Simply upload your
