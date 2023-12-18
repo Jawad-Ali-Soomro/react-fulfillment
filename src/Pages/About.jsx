@@ -13,7 +13,7 @@ const About = () => {
     });
   }, []);
   return (
-    <div className="s-main">
+    <div className="about-m">
       <Header />
       <div className="about-main">
         <div className="section-1">

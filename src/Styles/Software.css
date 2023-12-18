@@ -1,3 +1,8 @@
+.software-m {
+  display: flex;
+  justify-content: center;
+}
+
 .software-main {
   overflow: hidden;
   max-width: 1680px;

@@ -30,7 +30,7 @@ const Software = () => {
   );
 
   return (
-    <div>
+    <div className="software-m">
       <Header />
       <div className="software-main">
         <div className="sectionOne">
