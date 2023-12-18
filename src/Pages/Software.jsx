@@ -264,7 +264,7 @@ const Software = () => {
           </div>
         </div>
         <div className="sectionFour">
-          <div>
+          <div className="sub-section-1">
             <div>
               <div>INTEGRATIONS</div>
               <h2>
@@ -278,13 +278,130 @@ const Software = () => {
                 Librex. That is why it is so helpful.
               </p>
             </div>
-            <div></div>
+            <div>
+              <div className="mainbox"></div>
+            </div>
           </div>
-          <div>
-            <div className="sub-section-1">
+          <div className="sub-section-2">
+            <div>
               <div>
-                <img src="" alt="" />
+                <div>
+                  <img src="./ebay.webp" alt="ebay" />
+                </div>
+                <span>Ebay</span>
               </div>
+              <div>
+                <div>
+                  <img src="./amazon.webp" alt="ebay" />
+                </div>
+                <span>Amazon Marketplace</span>
+              </div>
+              <div>
+                <div>
+                  <img src="./shopify.webp" alt="shopify" />
+                </div>
+                <span>Shopify</span>
+              </div>
+              <div>
+                <div>
+                  <img src="./walmart.webp" alt="walmart" />
+                </div>
+                <span>walmart</span>
+              </div>
+              <div>
+                <div>
+                  <img src="./woocom.svg" alt="wooCommerce" />
+                </div>
+                <span>WooCommerce</span>
+              </div>
+              <div>
+                <div>
+                  <img src="./etsy.svg" alt="etsy" />
+                </div>
+                <span>etsy</span>
+              </div>
+            </div>
+            <input type="checkbox" name="show" id="show" />
+            <div className="show-menu">
+              <div>
+                <div>
+                  <img src="./ebay.webp" alt="ebay" />
+                </div>
+                <span>Ebay</span>
+              </div>
+              <div>
+                <div>
+                  <img src="./amazon.webp" alt="ebay" />
+                </div>
+                <span>Amazon Marketplace</span>
+              </div>
+              <div>
+                <div>
+                  <img src="./shopify.webp" alt="shopify" />
+                </div>
+                <span>Shopify</span>
+              </div>
+              <div>
+                <div>
+                  <img src="./walmart.webp" alt="walmart" />
+                </div>
+                <span>walmart</span>
+              </div>
+              <div>
+                <div>
+                  <img src="./woocom.svg" alt="wooCommerce" />
+                </div>
+                <span>WooCommerce</span>
+              </div>
+              <div>
+                <div>
+                  <img src="./etsy.svg" alt="etsy" />
+                </div>
+                <span>etsy</span>
+              </div>
+            </div>
+            <div className="show-menu">
+              <div>
+                <div>
+                  <img src="./ebay.webp" alt="ebay" />
+                </div>
+                <span>Ebay</span>
+              </div>
+              <div>
+                <div>
+                  <img src="./amazon.webp" alt="ebay" />
+                </div>
+                <span>Amazon Marketplace</span>
+              </div>
+              <div>
+                <div>
+                  <img src="./shopify.webp" alt="shopify" />
+                </div>
+                <span>Shopify</span>
+              </div>
+              <div>
+                <div>
+                  <img src="./walmart.webp" alt="walmart" />
+                </div>
+                <span>walmart</span>
+              </div>
+              <div>
+                <div>
+                  <img src="./woocom.svg" alt="wooCommerce" />
+                </div>
+                <span>WooCommerce</span>
+              </div>
+              <div>
+                <div>
+                  <img src="./etsy.svg" alt="etsy" />
+                </div>
+                <span>etsy</span>
+              </div>
+            </div>
+            <div>
+              <label className="showmore" htmlFor={"show"}>
+                Show
+              </label>
             </div>
           </div>
         </div>

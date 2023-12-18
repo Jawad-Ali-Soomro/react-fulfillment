@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .software-main {
   overflow: hidden;
   max-width: 1680px;
@@ -156,6 +157,80 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+.software-main .sectionFour {
+  display: flex;
+  gap: 50px;
+  flex-direction: column;
+  padding: 20px 30px;
+}
+.software-main .sectionFour .sub-section-1 {
+  display: flex;
+}
+.software-main .sectionFour .sub-section-1 > * {
+  width: 50%;
+}
+.software-main .sectionFour .sub-section-1 > *:first-child {
+  display: flex;
+  flex-direction: column;
+  color: gray;
+  gap: 30px;
+}
+.software-main .sectionFour .sub-section-1 > *:first-child h2 {
+  color: #333333;
+  font-size: 3rem;
+}
+.software-main .sectionFour .sub-section-1 > *:last-child {
+  background-color: red;
+  display: flex;
+  margin: 10px;
+}
+.software-main .sectionFour .sub-section-2 {
+  padding: 100px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.software-main .sectionFour .sub-section-2 input[type^=checkbox]:checked ~ .show-menu {
+  display: flex !important;
+}
+.software-main .sectionFour .sub-section-2 input[type^=checkbox] {
+  display: none;
+}
+.software-main .sectionFour .sub-section-2 input[type^=checkbox]:checked ~ :last-child ::after {
+  content: "Less Integration ▶";
+}
+.software-main .sectionFour .sub-section-2 > .show-menu {
+  overflow: hidden;
+  display: none !important;
+}
+.software-main .sectionFour .sub-section-2 > *:not(:nth-child(2), :last-child) {
+  display: flex;
+  justify-content: space-evenly;
+}
+.software-main .sectionFour .sub-section-2 > *:not(:nth-child(2), :last-child) > * {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  text-align: center;
+  color: gray;
+  text-transform: capitalize;
+  font-size: 1.2rem;
+  gap: 20px;
+  width: 200px;
+}
+.software-main .sectionFour .sub-section-2 > *:not(:nth-child(2), :last-child) > * img {
+  width: 70px;
+}
+.software-main .sectionFour .sub-section-2 > *:last-child {
+  text-align: right;
+}
+.software-main .sectionFour .sub-section-2 > *:last-child label {
+  color: gray;
+  position: relative;
+}
+.software-main .sectionFour .sub-section-2 > *:last-child label::after {
+  content: "More Integration";
 }
 
 @media (max-width: 960px) {
