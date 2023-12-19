@@ -21,12 +21,18 @@ const Home = () => {
     <div className="home-page">
       <Header />
       <div className="main-hero">
+        <video
+          src="./video.mp4"
+          autoPlay={true}
+          loop={true}
+          alt=""
+          className="banner"
+        />
         <div className="top-content">
           <h1>
-            <span>STORE </span>
-            <span>PREP</span>
-            <span>PACK</span>
-            <span>SHIP</span>
+            DELIVERING&nbsp;FROM
+            <span>FACTORY&nbsp;</span>
+            TO<span>DOORSTEP</span>
           </h1>
           <h2>Trusted By Online Sellers Worldwide</h2>
           <a href="/get-started">
@@ -66,7 +72,11 @@ const Home = () => {
       <div className="steps">
         <div className="step">
           <div className="top-sect">
-            <img src="./box.png" alt=""  style={{width:'200px' , height:'150px'}}/>
+            <img
+              src="./box.png"
+              alt=""
+              style={{ width: "200px", height: "150px" }}
+            />
           </div>
           <section className="main-step">
             <h1>1</h1>
@@ -75,7 +85,11 @@ const Home = () => {
         </div>
         <div className="step">
           <div className="top-sect">
-            <img src="./supply.png" alt="" style={{width:'200px' , height:'150px'}} />
+            <img
+              src="./supply.png"
+              alt=""
+              style={{ width: "200px", height: "150px" }}
+            />
           </div>
           <section className="main-step">
             <h1>2</h1>
@@ -84,7 +98,11 @@ const Home = () => {
         </div>
         <div className="step not">
           <div className="top-sect">
-            <img src="./delivery-box.png" alt="" style={{width:'200px' , height:'150px'}}  />
+            <img
+              src="./delivery-box.png"
+              alt=""
+              style={{ width: "200px", height: "150px" }}
+            />
           </div>
           <section className="main-step">
             <h1>3</h1>
@@ -305,7 +323,10 @@ const Home = () => {
       )}
       <div className="integrations">
         <p>Our Integrations</p>
-        <span>Librex offers unlimited selling integrations for all accounts via custom API’s to top ecommerce platforms. We can integrate them all!</span>
+        <span>
+          Eastern Fulfillment offers unlimited selling integrations for all accounts via
+          custom API’s to top ecommerce platforms. We can integrate them all!
+        </span>
         <div className="main-integrarions">
           <div className="main-icon">
             <img src="./amazon.png" alt="" />
@@ -365,7 +386,7 @@ const Home = () => {
           </span>
         </div>
         <div>
-          <img src="./community.png" alt="" />
+          <img src="./join-us.svg" alt="" />
         </div>
       </div>
       <Footer />

@@ -32,6 +32,11 @@
     font-weight: 300;
   }
 
+  .swiper p span{
+    font-size: 2rem;
+    font-weight: 900;
+  }
+
   .swiper-slide img {
       display: block;
       width: 100px;
